@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProDriving Køreskole Aalborg | Personlig køreundervisning</title>
+  <meta name="description" content="ProDriving køreskole i Aalborg. Max 9 elever per hold – vi tager hensyn til ADHD og ordblindhed. Kørekort til bil fra 12.995 kr inkl. moms. Skriv til os på WhatsApp." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://prodriving.dk/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ProDriving Køreskole Aalborg" />
+  <meta property="og:description" content="Max 9 elever per hold. Personlig køreundervisning med hensyn til ADHD og ordblindhed. Aalborg centrum." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prodriving.dk" />
+  <meta property="og:locale" content="da_DK" />
+
+  <!-- Schema: DrivingSchool -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DrivingSchool",
+    "name": "ProDriving",
+    "url": "https://prodriving.dk",
+    "telephone": "+4560441223",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Enggårdsgade 5, kld.",
+      "addressLocality": "Aalborg",
+      "postalCode": "9000",
+      "addressCountry": "DK"
+    },
+    "description": "Køreskole i Aalborg med max 9 elever per hold. Særlig hensyn til ADHD og ordblindhed. Kørekort til bil, generhvervelse, særlig køreundervisning og rutine timer.",
+    "currenciesAccepted": "DKK",
+    "priceRange": "kr kr",
+    "founder": { "@type": "Person", "name": "Carina Hansen" }
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hvornår kan jeg begynde på mit kørekort?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Du kan starte, når du er 16 år og 9 måneder gammel – 3 måneder inden du fylder 17. Det betyder, at du kan have kørekortet i hånden allerede den dag du fylder 17 år." }
+      },
+      {
+        "@type": "Question",
+        "name": "Tager ProDriving hensyn til ADHD og ordblindhed?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja. Med max 9 elever per hold er der god plads og tid til at tilpasse undervisningen til den enkelte elev – uanset om du har ADHD, ordblindhed eller blot brug for lidt ekstra ro." }
+      },
+      {
+        "@type": "Question",
+        "name": "Hvad er inkluderet i de 12.995 kr?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pakkeprisen dækker selve køreundervisningen inkl. teori, manøvrebane, landevejskørsel og mørkekørsel. Køreprøve (1.600 kr), førstehjælp (700 kr), lægeattest (500 kr), pasfoto og billeje til prøven (1.000 kr) betales separat." }
+      },
+      {
+        "@type": "Question",
+        "name": "Hvad er Generhvervelse?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Generhvervelse er til nye bilister, der har mistet kørekortet inden for de første 3 år. I de første 3 år gælder max 0,20 promille. Har du overtrådt reglerne, kan du generhverve kørekortet via et særligt forløb." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg finansiere mit kørekort?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja, finansiering er mulig. Kontakt Carina på WhatsApp for at høre om dine muligheder." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #f7f9fc;
+      --bg-2:     #eef2f7;
+      --bg-card:  #ffffff;
+      --accent:   #f5a623;
+      --accent-h: #e09518;
+      --wa:       #25D366;
+      --wa-h:     #1da850;
+      --text:     #1a2d42;
+      --muted:    #6b7c93;
+      --border:   rgba(26,45,66,0.10);
+      --shadow:   0 2px 14px rgba(26,45,66,0.08);
+      --r:        16px;
+      --r-sm:     10px;
+      --hh:       64px;
+    }
+
+    html { scroll-behavior: smooth; scroll-padding-top: var(--hh); }
+
+    body {
+      font-family: 'Segoe UI', Inter, system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+    .section   { padding: 4.5rem 0; }
+
+    .section-label {
+      font-size: 0.76rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.65rem;
+    }
+    .section-title {
+      font-size: clamp(1.65rem, 5vw, 2.5rem);
+      font-weight: 900; line-height: 1.12; margin-bottom: 0.9rem;
+    }
+    .section-sub {
+      font-size: 1rem; color: var(--muted); max-width: 540px; margin-bottom: 2.5rem; line-height: 1.7;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 0.5rem; padding: 0.9rem 1.75rem; border-radius: 50px;
+      font-size: 1rem; font-weight: 700; cursor: pointer;
+      transition: transform .15s, box-shadow .15s, background .15s;
+      border: none; text-decoration: none; white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-wa  { background: var(--wa);  color: #fff; box-shadow: 0 6px 20px rgba(37,211,102,.35); }
+    .btn-wa:hover { background: var(--wa-h); box-shadow: 0 10px 28px rgba(37,211,102,.5); }
+
+    .btn-accent { background: var(--accent); color: #0d1b2a; box-shadow: 0 6px 20px rgba(245,166,35,.35); }
+    .btn-accent:hover { background: var(--accent-h); box-shadow: 0 10px 28px rgba(245,166,35,.5); }
+
+    .btn-ghost {
+      background: transparent; color: var(--text);
+      border: 1.5px solid rgba(26,45,66,.25);
+    }
+    .btn-ghost:hover { border-color: rgba(26,45,66,.5); }
+
+    /* ── HEADER ── */
+    .header {
+      position: sticky; top: 0; z-index: 100; height: var(--hh);
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 12px rgba(26,45,66,.07);
+    }
+    .header-inner {
+      height: 100%; display: flex; align-items: center;
+      justify-content: space-between; gap: 1rem;
+    }
+    .logo {
+      font-size: 1.2rem; font-weight: 900; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--text); flex-shrink: 0;
+    }
+    .logo span { color: var(--accent); }
+
+    .nav-links { display: none; list-style: none; gap: 1.75rem; align-items: center; }
+    .nav-links a { font-size: .88rem; font-weight: 600; color: var(--muted); transition: color .15s; }
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-wa { display: none; font-size: .88rem !important; padding: .6rem 1.2rem !important; }
+
+    .hamburger {
+      background: none; border: none; cursor: pointer;
+      padding: .4rem; display: flex; flex-direction: column; gap: 5px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--text); border-radius: 2px; transition: all .25s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+    .mobile-menu {
+      position: fixed; inset: var(--hh) 0 0 0; background: var(--bg);
+      z-index: 99; display: flex; flex-direction: column;
+      padding: 2rem 1.5rem; overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform .3s cubic-bezier(.4,0,.2,1);
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .mobile-menu a {
+      font-size: 1.4rem; font-weight: 700; padding: 1rem 0;
+      border-bottom: 1px solid var(--border); color: var(--text);
+    }
+    .mobile-menu a:hover { color: var(--accent); }
+    .mobile-menu .m-wa { margin-top: 2rem; text-align: center; }
+    .mobile-menu .m-phone {
+      font-size: .95rem !important; font-weight: 500 !important;
+      color: var(--muted) !important; margin-top: .75rem;
+      text-align: center; border: none !important; padding: .5rem 0 !important;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links { display: flex; }
+      .nav-wa    { display: inline-flex; }
+      .hamburger { display: none; }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: calc(100svh - var(--hh));
+      display: flex; align-items: flex-end;
+      padding: 0; position: relative; overflow: hidden;
+      background: #0d1b2a;
+    }
+
+    /* Video background — desktop only */
+    .hero-video {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; z-index: 1;
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .hero-video { display: block; }
+    }
+
+    /* Image background — mobile only */
+    .hero-img-bg {
+      position: absolute; inset: 0;
+      background: url('images/prodriving-koereskole-bil-aalborg-limfjord.jpg') center 55% / cover no-repeat;
+      z-index: 1;
+    }
+    @media (min-width: 768px) {
+      .hero-img-bg { display: none; }
+    }
+
+    /* Dark gradient overlay */
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background:
+        radial-gradient(ellipse 120% 100% at 50% 50%, transparent 25%, rgba(0,0,0,0.45) 100%),
+        linear-gradient(to top,
+          rgba(13,27,42,0.95) 0%,
+          rgba(13,27,42,0.55) 45%,
+          rgba(13,27,42,0.15) 100%
+        );
+    }
+
+    /* Text content sits above overlays */
+    .hero > .container { position: relative; z-index: 3; width: 100%; padding-bottom: 3.5rem; padding-top: 3rem; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: rgba(245,166,35,.18); border: 1px solid rgba(245,166,35,.35);
+      color: var(--accent); font-size: .8rem; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      padding: .4rem .9rem; border-radius: 50px; margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      font-weight: 900; line-height: 1.08; margin-bottom: 1rem;
+      color: #fff;
+    }
+    .hero h1 em { color: var(--accent); font-style: normal; }
+    .hero-sub {
+      font-size: 1.05rem; color: rgba(255,255,255,.78);
+      line-height: 1.7; margin-bottom: 2rem; max-width: 500px;
+    }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 2.5rem; }
+
+    .hero-stats { display: flex; gap: 2.25rem; flex-wrap: wrap; }
+    .hero-stat { display: flex; flex-direction: column; }
+    .hero-stat strong { font-size: 1.55rem; font-weight: 900; color: var(--accent); line-height: 1; }
+    .hero-stat span   { font-size: .78rem; color: rgba(255,255,255,.6); margin-top: .25rem; }
+
+    .placeholder {
+      width: 100%; background: var(--bg-card);
+      border-radius: var(--r);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: .6rem; border: 2px dashed rgba(245,166,35,.22);
+      color: var(--muted); font-size: .88rem; text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    .placeholder .pi { font-size: 2.4rem; opacity: .45; }
+    .placeholder small { font-size: .75rem; opacity: .55; }
+
+    /* ── USP STRIP ── */
+    .usp-strip {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .usp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
+    @media (min-width: 640px) { .usp-grid { grid-template-columns: repeat(4,1fr); } }
+
+    .usp-item { display: flex; align-items: center; gap: .7rem; }
+    .usp-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .usp-text strong { display: block; font-size: .88rem; font-weight: 700; }
+    .usp-text span   { font-size: .76rem; color: var(--muted); }
+
+    /* ── YDELSER ── */
+    .ydelser-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    @media (min-width: 480px) { .ydelser-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .ydelser-grid { grid-template-columns: repeat(4,1fr); } }
+
+    .ydelse-card {
+      background: var(--bg-card); border-radius: var(--r);
+      padding: 1.75rem 1.5rem; border: 1px solid var(--border);
+      transition: border-color .2s, transform .2s;
+    }
+    .ydelse-card:hover { border-color: rgba(245,166,35,.35); transform: translateY(-3px); }
+    .ydelse-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .ydelse-card h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: .5rem; }
+    .ydelse-card p  { font-size: .86rem; color: var(--muted); line-height: 1.65; }
+    .ydelse-price {
+      margin-top: 1.25rem; font-size: 1.3rem; font-weight: 900; color: var(--accent);
+    }
+    .ydelse-price span { font-size: .75rem; font-weight: 500; color: var(--muted); }
+
+    /* ── PRISER ── */
+    .priser-bg { background: var(--bg-2); }
+
+    .info-banner {
+      background: rgba(245,166,35,.09); border: 1px solid rgba(245,166,35,.35);
+      border-radius: var(--r-sm); padding: 1rem 1.25rem;
+      display: flex; gap: .75rem; align-items: flex-start;
+      font-size: .86rem; line-height: 1.65; color: var(--text);
+      margin-bottom: 2rem;
+    }
+    .info-banner .bi { font-size: 1rem; flex-shrink: 0; margin-top: .15rem; }
+
+    .priser-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-bottom: 2.5rem; }
+    @media (min-width: 640px) { .priser-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .priser-grid { grid-template-columns: repeat(3,1fr); } }
+
+    .pris-card {
+      background: var(--bg-card); border-radius: var(--r);
+      padding: 2rem 1.75rem; border: 1px solid var(--border);
+      display: flex; flex-direction: column; position: relative;
+    }
+    .pris-card.featured { border-color: var(--accent); }
+    .pris-badge {
+      position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+      background: var(--accent); color: #fff;
+      font-size: .7rem; font-weight: 800; letter-spacing: 1px;
+      text-transform: uppercase; padding: .3rem 1rem;
+      border-radius: 0 0 8px 8px; white-space: nowrap;
+    }
+    .pris-card h3     { font-size: 1.05rem; font-weight: 800; margin-bottom: .3rem; }
+    .pris-desc        { font-size: .82rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.55; }
+    .pris-amount      { font-size: 2.4rem; font-weight: 900; color: var(--accent); line-height: 1; }
+    .pris-amount sub  { font-size: 1rem; font-weight: 600; vertical-align: baseline; }
+    .pris-inkl        { font-size: .77rem; color: var(--muted); margin-bottom: 1.5rem; }
+
+    .pris-includes    { list-style: none; flex: 1; margin-bottom: 1.75rem; }
+    .pris-includes li {
+      display: flex; align-items: flex-start; gap: .6rem;
+      font-size: .86rem; color: var(--muted);
+      padding: .45rem 0; border-bottom: 1px solid var(--border);
+    }
+    .pris-includes li:last-child { border-bottom: none; }
+    .pris-includes li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+    .extras-title { font-size: .95rem; font-weight: 700; color: var(--muted); margin-bottom: 1rem; }
+    .extras-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+    .extras-table td { padding: .65rem 0; border-bottom: 1px solid var(--border); color: var(--muted); }
+    .extras-table td:last-child { text-align: right; font-weight: 700; color: var(--text); }
+    .extras-table tr:last-child td { border-bottom: none; }
+
+    /* ── HOLD START ── */
+    .hold-grid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
+    @media (min-width: 480px) { .hold-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 768px) { .hold-grid { grid-template-columns: repeat(3,1fr); } }
+
+    .hold-card {
+      background: var(--bg-card); border-radius: var(--r-sm);
+      padding: 1.15rem 1.4rem; border: 1px solid var(--border);
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .hold-card.next { border-color: var(--accent); background: rgba(245,166,35,.07); }
+
+    .hold-date-blk {
+      background: var(--bg-2); border-radius: 8px;
+      padding: .5rem .75rem; text-align: center; min-width: 52px; flex-shrink: 0;
+    }
+    .hold-card.next .hold-date-blk { background: var(--accent); color: #fff; }
+    .hold-day   { font-size: 1.5rem; font-weight: 900; line-height: 1; }
+    .hold-month { font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+
+    .hold-next-lbl { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: .3rem; }
+    .hold-info strong { display: block; font-size: .88rem; font-weight: 700; }
+    .hold-info span   { font-size: .78rem; color: var(--muted); }
+
+    /* ── ADHD SECTION ── */
+    .adhd-section {
+      background: linear-gradient(135deg, #fff8ee 0%, #fff3e0 100%);
+      border-top: 1px solid rgba(245,166,35,.2); border-bottom: 1px solid rgba(245,166,35,.2);
+    }
+    .adhd-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+    @media (min-width: 768px) { .adhd-grid { grid-template-columns: 1fr 1fr; } }
+
+    .adhd-points { display: flex; flex-direction: column; gap: .85rem; margin-top: 1.5rem; }
+    .adhd-point {
+      display: flex; align-items: flex-start; gap: .9rem;
+      background: #fff; border-radius: var(--r-sm);
+      padding: 1rem 1.2rem; border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .adhd-point-icon { font-size: 1.35rem; flex-shrink: 0; margin-top: .1rem; }
+    .adhd-point-text strong { display: block; font-size: .9rem; font-weight: 700; margin-bottom: .2rem; }
+    .adhd-point-text span   { font-size: .82rem; color: var(--muted); line-height: 1.55; }
+
+    .media-col { display: flex; flex-direction: column; gap: 1rem; }
+    .media-ph { aspect-ratio: 4/3; }
+
+    .video-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .65rem; }
+    .video-ph {
+      aspect-ratio: 9/16; font-size: .75rem; padding: .75rem;
+    }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; gap: .7rem; max-width: 720px; }
+    .faq-item {
+      background: var(--bg-card); border-radius: var(--r-sm);
+      border: 1px solid var(--border); overflow: hidden;
+    }
+    .faq-q {
+      width: 100%; background: none; border: none; color: var(--text);
+      font-size: .93rem; font-weight: 700; text-align: left;
+      padding: 1.1rem 1.25rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    }
+    .faq-q:hover { background: rgba(26,45,66,.03); }
+    .faq-chevron { font-size: .95rem; transition: transform .25s; flex-shrink: 0; opacity: .7; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .faq-item.open .faq-a { max-height: 320px; }
+    .faq-a-inner {
+      padding: 0 1.25rem 1.25rem; font-size: .88rem;
+      color: var(--muted); line-height: 1.75;
+    }
+
+    /* ── OM CARINA ── */
+    .om-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }
+    @media (min-width: 640px) { .om-grid { grid-template-columns: 260px 1fr; } }
+
+    .om-ph { max-width: 260px; aspect-ratio: 3/4; margin: 0 auto; }
+    .om-text h2 { font-size: clamp(1.4rem, 4vw, 1.9rem); font-weight: 900; margin-bottom: 1rem; }
+    .om-text p  { font-size: .93rem; color: var(--muted); line-height: 1.8; margin-bottom: 1rem; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: #1a2d42;
+      border-top: 1px solid var(--border);
+      padding: 3.5rem 0 2rem;
+      color: rgba(255,255,255,.85);
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2.5rem;
+    }
+    @media (min-width: 640px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 900px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr; } }
+
+    .footer-logo { font-size: 1.3rem; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: .75rem; }
+    .footer-desc { font-size: .84rem; color: rgba(255,255,255,.6); line-height: 1.7; margin-bottom: 1.25rem; }
+
+    .footer h4 { font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 1rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
+    .footer-links a { font-size: .88rem; color: rgba(255,255,255,.7); transition: color .15s; }
+    .footer-links a:hover { color: #fff; }
+
+    .footer-ci { display: flex; align-items: flex-start; gap: .7rem; font-size: .86rem; color: rgba(255,255,255,.7); margin-bottom: .75rem; }
+    .footer-ci .ic { font-size: .95rem; flex-shrink: 0; margin-top: .1rem; }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1); padding-top: 1.5rem;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: .5rem;
+      font-size: .76rem; color: rgba(255,255,255,.4);
+    }
+
+    /* ── FLOATING WA ── */
+    .wa-float {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 200;
+      background: var(--wa); color: #fff;
+      width: 58px; height: 58px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      box-shadow: 0 6px 24px rgba(37,211,102,.45);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .wa-float:hover { transform: scale(1.08); box-shadow: 0 10px 32px rgba(37,211,102,.6); }
+    .wa-float::after {
+      content: ''; position: absolute; inset: -4px; border-radius: 50%;
+      border: 2px solid var(--wa); animation: wapulse 2.2s infinite;
+    }
+    @keyframes wapulse {
+      0%   { transform: scale(1);   opacity: .6; }
+      70%  { transform: scale(1.35); opacity: 0; }
+      100% { transform: scale(1.35); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── FLOATING WHATSAPP ── -->
+  <a href="https://wa.me/4560441223" class="wa-float" aria-label="Skriv til os på WhatsApp" target="_blank" rel="noopener">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Pro<span>Driving</span></a>
+
+      <nav aria-label="Primær navigation">
+        <ul class="nav-links">
+          <li><a href="#ydelser">Ydelser</a></li>
+          <li><a href="#priser">Priser</a></li>
+          <li><a href="#hold-start">Hold start</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/4560441223" class="btn btn-wa nav-wa" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Åbn menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobil navigation">
+    <a href="#ydelser"    onclick="closeMenu()">Ydelser</a>
+    <a href="#priser"     onclick="closeMenu()">Priser</a>
+    <a href="#hold-start" onclick="closeMenu()">Hold start</a>
+    <a href="#faq"        onclick="closeMenu()">FAQ</a>
+    <a href="#kontakt"    onclick="closeMenu()">Kontakt</a>
+    <a href="https://wa.me/4560441223" class="btn btn-wa m-wa" target="_blank" rel="noopener" onclick="closeMenu()">
+      Skriv på WhatsApp
+    </a>
+    <a href="tel:+4560441223" class="m-phone" onclick="closeMenu()">Ring 60 44 12 23</a>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="top">
+      <!-- Background: video (desktop) -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="prodriving-aalborg-drone-hero.mp4" type="video/mp4" />
+      </video>
+      <!-- Background: image (mobile) -->
+      <div class="hero-img-bg" role="img" aria-label="ProDriving køreskolens bil i Aalborg"></div>
+      <!-- Gradient overlay -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-badge">📍 Køreskole i Aalborg</div>
+        <h1>Få dit <em>kørekort</em> – trygt og personligt</h1>
+        <p class="hero-sub">
+          Hos ProDriving er der max 9 elever per hold. Carina Hansen har tid til dig og tager særligt hensyn til elever med ADHD og ordblindhed.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/4560441223" class="btn btn-wa" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Skriv på WhatsApp
+          </a>
+          <a href="tel:+4560441223" class="btn btn-ghost" style="color:#fff; border-color:rgba(255,255,255,.4);">Ring 60 44 12 23</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>9</strong>
+            <span>elever max pr. hold</span>
+          </div>
+          <div class="hero-stat">
+            <strong>16 år 9 mdr.</strong>
+            <span>kan du starte</span>
+          </div>
+          <div class="hero-stat">
+            <strong>Aalborg</strong>
+            <span>Enggårdsgade 5, kld.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── USP STRIP ── -->
+    <div class="usp-strip">
+      <div class="container">
+        <div class="usp-grid">
+          <div class="usp-item">
+            <span class="usp-icon">👥</span>
+            <div class="usp-text"><strong>Max 9 elever</strong><span>Per hold</span></div>
+          </div>
+          <div class="usp-item">
+            <span class="usp-icon">🧠</span>
+            <div class="usp-text"><strong>ADHD & ordblindhed</strong><span>Særlig hensyn</span></div>
+          </div>
+          <div class="usp-item">
+            <span class="usp-icon">📍</span>
+            <div class="usp-text"><strong>Aalborg centrum</strong><span>Enggårdsgade 5, kld.</span></div>
+          </div>
+          <div class="usp-item">
+            <span class="usp-icon">💳</span>
+            <div class="usp-text"><strong>Finansiering mulig</strong><span>Spred udgiften</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── YDELSER ── -->
+    <section class="section" id="ydelser">
+      <div class="container">
+        <p class="section-label">Start inden 1. juli 2026</p>
+        <h2 class="section-title">Færdiggør kørekortet under de nuværende regler</h2>
+        <p class="section-sub">Fra 1. juli ændres køreuddannelsen i Danmark – lektioner erstattes af moduler og pensum udvides. Starter du nu, kan du færdiggøre hele forløbet under de regler du kender, frem til 31. december 2026. Vi tilbyder alt hvad du har brug for.</p>
+
+        <div class="ydelser-grid">
+          <div class="ydelse-card">
+            <div class="ydelse-icon">🚗</div>
+            <h3>Kørekort til bil</h3>
+            <p>Få dit første kørekort med personlig undervisning. Du kan starte allerede som 16-årig (9 måneder). Vi kører i både manuel og automatgear.</p>
+          </div>
+          <div class="ydelse-card">
+            <div class="ydelse-icon">🔄</div>
+            <h3>Generhvervelse</h3>
+            <p>Har du mistet kørekortet inden for de første 3 år? Vi hjælper dig med at genhente det med et målrettet forløb.</p>
+          </div>
+          <div class="ydelse-card">
+            <div class="ydelse-icon">📋</div>
+            <h3>Særlig køreundervisning</h3>
+            <p>Særligt tilpasset forløb til bilister der skal genhente kørekortet efter frakendelse. Individuel vejledning med Carina.</p>
+          </div>
+          <div class="ydelse-card">
+            <div class="ydelse-icon">⚙️</div>
+            <h3>Rutine timer</h3>
+            <p>Allerede kørekort, men vil gerne øve dig? Vælg selv om du kører i manuel gear eller automatgear. Ingen forpligtelse.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRISER ── -->
+    <section class="section priser-bg" id="priser">
+      <div class="container">
+        <p class="section-label">Priser</p>
+        <h2 class="section-title">Gennemskuelige priser</h2>
+        <p class="section-sub">Alle priser er inkl. moms. Ingen skjulte gebyrer.</p>
+
+        <div class="info-banner">
+          <span class="bi">ℹ️</span>
+          <div>
+            <strong>Nye regler fra 1. juli 2026:</strong> Køreuddannelsen moderniseres – moduler erstatter lektioner, og elbiler/hybridbiler tilføjes pensum. Starter du inden 1. juli, kan du færdiggøre forløbet under de nuværende regler frem til 31. december 2026.
+            <a href="#faq" style="color:var(--accent); margin-left:.25rem;">Læs mere i FAQ →</a>
+          </div>
+        </div>
+
+        <div class="priser-grid">
+          <!-- Nyt kørekort -->
+          <div class="pris-card featured">
+            <div class="pris-badge">Mest populær</div>
+            <h3>Kørekort til bil</h3>
+            <p class="pris-desc">Alt hvad du skal bruge for at starte fra bunden</p>
+            <div class="pris-amount">12.995 <sub>kr</sub></div>
+            <p class="pris-inkl">inkl. moms · undervisning</p>
+            <ul class="pris-includes">
+              <li>Teoriundervisning</li>
+              <li>Manøvrebane</li>
+              <li>Landevejskørsel</li>
+              <li>Mørkekørsel</li>
+              <li>Max 9 elever per hold</li>
+              <li>Hensyn til ADHD & ordblindhed</li>
+            </ul>
+            <a href="https://wa.me/4560441223" class="btn btn-wa" target="_blank" rel="noopener">Tilmeld via WhatsApp</a>
+          </div>
+
+          <!-- Generhvervelse -->
+          <div class="pris-card">
+            <h3>Generhvervelse</h3>
+            <p class="pris-desc">Til nye bilister der har mistet kørekortet inden for de første 3 år</p>
+            <div class="pris-amount">3.695 <sub>kr</sub></div>
+            <p class="pris-inkl">inkl. moms · undervisning</p>
+            <ul class="pris-includes">
+              <li>Målrettet køreuddannelse</li>
+              <li>Personlig underviser</li>
+              <li>Tilpasset dit behov</li>
+            </ul>
+            <a href="https://wa.me/4560441223" class="btn btn-ghost" target="_blank" rel="noopener">Kontakt os</a>
+          </div>
+
+          <!-- Særlig -->
+          <div class="pris-card">
+            <h3>Særlig køreundervisning</h3>
+            <p class="pris-desc">Til bilister der skal genhente kørekortet efter frakendelse</p>
+            <div class="pris-amount">7.995 <sub>kr</sub></div>
+            <p class="pris-inkl">inkl. moms · undervisning</p>
+            <ul class="pris-includes">
+              <li>Individuelt tilpasset forløb</li>
+              <li>Personlig vurdering</li>
+              <li>Carina Hansen er din underviser</li>
+            </ul>
+            <a href="https://wa.me/4560441223" class="btn btn-ghost" target="_blank" rel="noopener">Kontakt os</a>
+          </div>
+        </div>
+
+        <p class="extras-title">Øvrige udgifter (betales separat)</p>
+        <table class="extras-table">
+          <tr><td>Køreprøve (betales til Færdselsstyrelsen)</td><td>1.600 kr</td></tr>
+          <tr><td>Førstehjælpskursus</td><td>700 kr</td></tr>
+          <tr><td>Lægeattest</td><td>500 kr</td></tr>
+          <tr><td>Pasfoto</td><td>Se borger.dk</td></tr>
+          <tr><td>Billeje til køreprøven</td><td>1.000 kr</td></tr>
+          <tr><td>Online teorikode (gælder 140 dage)</td><td>250 kr</td></tr>
+          <tr><td>Ekstra køretimer</td><td>450 kr / time</td></tr>
+          <tr><td>Rutine timer</td><td>650 kr / time</td></tr>
+        </table>
+        <p style="font-size:.78rem; color:var(--muted); margin-top:1rem;">
+          Alle priser er inkl. moms. Finansiering er mulig – spørg Carina for mere info.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── HOLD START ── -->
+    <section class="section" id="hold-start">
+      <div class="container">
+        <p class="section-label">Tilmelding</p>
+        <h2 class="section-title">Næste hold starter</h2>
+        <p class="section-sub">Nyt hold hver 3. uge, torsdag kl. 17:00. Max 9 pladser – tilmeld dig hurtigt.</p>
+
+        <div class="hold-grid">
+          <div class="hold-card next">
+            <div class="hold-date-blk">
+              <div class="hold-day">4</div>
+              <div class="hold-month">Jun</div>
+            </div>
+            <div class="hold-info">
+              <p class="hold-next-lbl">Næste hold</p>
+              <strong>Torsdag den 4. juni 2026</strong>
+              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
+            </div>
+          </div>
+          <div class="hold-card">
+            <div class="hold-date-blk">
+              <div class="hold-day">25</div>
+              <div class="hold-month">Jun</div>
+            </div>
+            <div class="hold-info">
+              <strong>Torsdag den 25. juni 2026</strong>
+              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
+            </div>
+          </div>
+          <div class="hold-card">
+            <div class="hold-date-blk">
+              <div class="hold-day">16</div>
+              <div class="hold-month">Jul</div>
+            </div>
+            <div class="hold-info">
+              <strong>Torsdag den 16. juli 2026</strong>
+              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
+            </div>
+          </div>
+          <div class="hold-card">
+            <div class="hold-date-blk">
+              <div class="hold-day">6</div>
+              <div class="hold-month">Aug</div>
+            </div>
+            <div class="hold-info">
+              <strong>Torsdag den 6. august 2026</strong>
+              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
+            </div>
+          </div>
+          <div class="hold-card">
+            <div class="hold-date-blk">
+              <div class="hold-day">27</div>
+              <div class="hold-month">Aug</div>
+            </div>
+            <div class="hold-info">
+              <strong>Torsdag den 27. august 2026</strong>
+              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
+            </div>
+          </div>
+          <div class="hold-card">
+            <div class="hold-date-blk">
+              <div class="hold-day">17</div>
+              <div class="hold-month">Sep</div>
+            </div>
+            <div class="hold-info">
+              <strong>Torsdag den 17. september 2026</strong>
+              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem; text-align:center;">
+          <a href="https://wa.me/4560441223" class="btn btn-wa" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Tilmeld dig næste hold
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ADHD & ORDBLINDHED ── -->
+    <section class="section adhd-section">
+      <div class="container">
+        <div class="adhd-grid">
+          <div>
+            <p class="section-label">Ingen er ens</p>
+            <h2 class="section-title">Undervisning der passer til dig</h2>
+            <p style="color:var(--muted); font-size:.93rem; line-height:1.75; margin-bottom:.75rem;">
+              Med max 9 elever per hold er der plads til alle – uanset om du har ADHD, ordblindhed, eller blot trives bedre med ro og tid til at stille spørgsmål.
+            </p>
+            <p style="color:var(--muted); font-size:.93rem; line-height:1.75; margin-bottom:1.5rem;">
+              ProDriving er den eneste køreskole i Aalborg, der aktivt tager dette hensyn i undervisningen.
+            </p>
+            <div class="adhd-points">
+              <div class="adhd-point">
+                <span class="adhd-point-icon">👥</span>
+                <div class="adhd-point-text">
+                  <strong>Max 9 elever per hold</strong>
+                  <span>Mere tid og opmærksomhed til den enkelte elev</span>
+                </div>
+              </div>
+              <div class="adhd-point">
+                <span class="adhd-point-icon">🧠</span>
+                <div class="adhd-point-text">
+                  <strong>Tilpasset undervisning</strong>
+                  <span>Vi tilpasser tempo og formidling efter dine behov</span>
+                </div>
+              </div>
+              <div class="adhd-point">
+                <span class="adhd-point-icon">🤝</span>
+                <div class="adhd-point-text">
+                  <strong>Trygt læringsmiljø</strong>
+                  <span>Ingen stress – vi går i dit tempo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-col">
+            <img
+              src="images/koereundervisning-instruktor-elev-aalborg.jpg"
+              alt="Køreundervisning hos ProDriving – instruktør og elev i VW Golf, Aalborg"
+              style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:72% 35%;border-radius:var(--r);"
+              loading="lazy"
+              width="1200" height="900"
+            />
+            <div class="video-grid">
+              <video
+                src="videos/bestaaet-elev-prodriving-aalborg.mp4"
+                style="width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--r-sm);display:block;"
+                autoplay muted loop playsinline
+                title="Bestået elev hos ProDriving køreskole Aalborg"
+              ></video>
+              <div class="placeholder video-ph">
+                <span style="font-size:1.6rem; opacity:.4">▶️</span>
+                <span>Video fra bestået elev</span>
+              </div>
+              <div class="placeholder video-ph">
+                <span style="font-size:1.6rem; opacity:.4">▶️</span>
+                <span>Video fra bestået elev</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="section" id="faq">
+      <div class="container">
+        <p class="section-label">Spørgsmål & svar</p>
+        <h2 class="section-title">Ofte stillede spørgsmål</h2>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-q">Hvornår kan jeg begynde på mit kørekort? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Du kan starte, når du er <strong>16 år og 9 måneder</strong> – altså 3 måneder inden du fylder 17. Det betyder, at du kan have kørekortet i hånden allerede den dag du fylder 17 år.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Hvad er inkluderet i de 12.995 kr? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Pakkeprisen dækker selve køreundervisningen inkl. teori, manøvrebane, landevejskørsel og mørkekørsel. Hertil kommer separat: køreprøve (1.600 kr), førstehjælpskursus (700 kr), lægeattest (500 kr), pasfoto samt billeje til selve køreprøven (1.000 kr).
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Tager ProDriving hensyn til ADHD og ordblindhed? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Ja – og det er noget vi er stolte af. Med max 9 elever per hold har Carina Hansen tid og plads til at tilpasse undervisningen, så alle trives. Vi er p.t. den eneste køreskole i Aalborg der aktivt gør dette.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Hvad er Generhvervelse? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Generhvervelse er til nye bilister, der har mistet kørekortet inden for de første 3 år. I de første 3 år gælder en grænse på max 0,20 promille – praktisk set nultolerance. Har du mistet kortet, kan du genhente det via et særligt undervisningsforløb til 3.695 kr.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Hvad er Særlig køreundervisning? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Særlig køreundervisning er for bilister, der har fået frakendt kørekortet og skal igennem et særligt forløb for at genhente det. Det er et individuelt tilpasset forløb under Carinas vejledning til 7.995 kr.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Hvad er Rutine timer? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Rutine timer er til dig, der allerede har kørekortet men gerne vil øve dig – fx hvis du sjældent kører eller vil opbygge mere sikkerhed. Du vælger selv om du vil køre manuel gear eller automatgear. Pris: 650 kr / time inkl. moms.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Kan jeg finansiere mit kørekort? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Ja, finansiering er mulig så du kan sprede udgiften. Kontakt Carina direkte på WhatsApp for at høre om dine muligheder.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Hvad sker der med de nye kørekortregler fra 1. juli 2026? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Fra 1. juli 2026 moderniseres køreuddannelsen i Danmark. Lektioner erstattes af moduler, der bygger oven på hinanden, og pensum udvides med elbiler, hybridbiler og miljøvenlig kørsel. Starter du inden 1. juli 2026, kan du færdiggøre dit kørekort under de nuværende regler frem til 31. december 2026.
+            </div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── OM CARINA ── -->
+    <section class="section priser-bg" id="om">
+      <div class="container">
+        <p class="section-label">Din underviser</p>
+        <h2 class="section-title">Om Carina Hansen</h2>
+
+        <div class="om-grid">
+          <div>
+            <div class="placeholder om-ph">
+              <span style="font-size:3rem; opacity:.3">👤</span>
+              <span>Foto af Carina Hansen</span>
+              <small>Tilføjes af Carina</small>
+            </div>
+          </div>
+          <div class="om-text">
+            <p>Carina Hansen er kørelærer og ejer af ProDriving i Aalborg. Med et stærkt fokus på personlig undervisning holder hun holdene på max 9 elever, så alle elever får den tid og opmærksomhed de fortjener.</p>
+            <p>ProDriving tilbyder kørekort til bil, generhvervelse, særlig køreundervisning samt rutine timer i både manuel og automatgear. Skolen holder til i kælderen på Enggårdsgade 5 i Aalborg centrum.</p>
+            <p style="color:rgba(255,255,255,.45); font-size:.83rem;">
+              OBS: ProDriving må ikke forveksles med Carinas Køreskole i Gug – det er to separate og uafhængige kørerskoler.
+            </p>
+            <a href="https://wa.me/4560441223" class="btn btn-wa" style="margin-top:1.5rem;" target="_blank" rel="noopener">
+              Kontakt Carina på WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer" id="kontakt">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-logo">ProDriving</div>
+          <p class="footer-desc">Køreskole i Aalborg med personlig undervisning. Max 9 elever per hold. Vi tager hensyn til ADHD og ordblindhed.</p>
+          <a href="https://wa.me/4560441223" class="btn btn-wa" target="_blank" rel="noopener" style="font-size:.88rem; padding:.65rem 1.3rem;">
+            Skriv på WhatsApp
+          </a>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#ydelser">Ydelser</a></li>
+            <li><a href="#priser">Priser</a></li>
+            <li><a href="#hold-start">Hold start</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#om">Om Carina</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kontakt</h4>
+          <div class="footer-ci">
+            <span class="ic">💬</span>
+            <div>
+              <a href="https://wa.me/4560441223" target="_blank" rel="noopener">WhatsApp: 60 44 12 23</a><br>
+              <a href="tel:+4560441223">Telefon: 60 44 12 23</a>
+            </div>
+          </div>
+          <div class="footer-ci">
+            <span class="ic">📍</span>
+            <div>Enggårdsgade 5, kld.<br>9000 Aalborg</div>
+          </div>
+          <div class="footer-ci">
+            <span class="ic">🏢</span>
+            <div>CVR: 30416627</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 ProDriving · CVR 30416627</span>
+        <span>Enggårdsgade 5, kld., 9000 Aalborg</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger   = document.getElementById('hamburger');
+    const mobileMenu  = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item   = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
