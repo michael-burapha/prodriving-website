@@ -1311,11 +1311,17 @@
     });
   </script>
 
-  <!-- ── SNOW ── -->
-  <canvas id="snowCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9999;"></canvas>
+  <!-- ── SNOW (active 1–25 Dec) ── -->
+  <canvas id="snowCanvas" style="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9999;display:none;"></canvas>
   <script>
     (function(){
+      const now = new Date();
+      const m = now.getMonth(); // 0-indexed, 11 = December
+      const d = now.getDate();
+      if (!(m === 11 && d >= 1 && d <= 25)) return;
+
       const canvas = document.getElementById('snowCanvas');
+      canvas.style.display = 'block';
       const ctx = canvas.getContext('2d');
       let W, H, flakes = [];
 
@@ -1355,10 +1361,7 @@
           f.y += f.speed;
           f.x += f.drift;
 
-          if (f.y > H + 10) {
-            f.y = -10;
-            f.x = rand(0, W);
-          }
+          if (f.y > H + 10) { f.y = -10; f.x = rand(0, W); }
           if (f.x > W + 10) f.x = -10;
           if (f.x < -10)    f.x = W + 10;
         }
