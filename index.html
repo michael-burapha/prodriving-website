@@ -1022,10 +1022,11 @@
         <p class="section-sub" style="text-align:center; margin:0 auto 2rem;">Skriv til os, så vender Carina tilbage hurtigst muligt.</p>
 
         <div class="tilmeld-card">
-          <!-- Formspree: opret gratis konto på formspree.io og erstat YOUR_FORM_ID herunder -->
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="tilmeldForm">
-            <input type="hidden" name="_subject" value="Ny tilmelding via prodriving.dk" />
-            <input type="hidden" name="_replyto" value="" />
+          <!-- Web3Forms: gå til web3forms.com, indtast info@prodriving.dk og erstat YOUR_ACCESS_KEY herunder -->
+          <form action="https://api.web3forms.com/submit" method="POST" id="tilmeldForm">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="Ny tilmelding via prodriving.dk" />
+            <input type="hidden" name="from_name" value="ProDriving website" />
 
             <div class="form-row">
               <div class="form-group">
