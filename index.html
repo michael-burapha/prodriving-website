@@ -1113,11 +1113,10 @@
         <p class="section-sub" style="text-align:center; margin:0 auto 2rem;">Skriv til os, så vender Carina tilbage hurtigst muligt.</p>
 
         <div class="tilmeld-card">
-          <!-- Web3Forms: gå til web3forms.com, indtast info@prodriving.dk og erstat YOUR_ACCESS_KEY herunder -->
-          <form action="https://api.web3forms.com/submit" method="POST" id="tilmeldForm">
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
-            <input type="hidden" name="subject" value="Ny tilmelding via prodriving.dk" />
-            <input type="hidden" name="from_name" value="ProDriving website" />
+          <form action="https://formsubmit.co/info@prodriving.dk" method="POST" id="tilmeldForm">
+            <input type="hidden" name="_subject" value="Ny tilmelding via prodriving.dk" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://prodriving.dk" />
 
             <div class="form-row">
               <div class="form-group">
