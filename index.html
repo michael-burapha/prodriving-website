@@ -383,30 +383,6 @@
     .extras-table td:last-child { text-align: right; font-weight: 700; color: var(--text); }
     .extras-table tr:last-child td { border-bottom: none; }
 
-    /* ── HOLD START ── */
-    .hold-grid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
-    @media (min-width: 480px) { .hold-grid { grid-template-columns: 1fr 1fr; } }
-    @media (min-width: 768px) { .hold-grid { grid-template-columns: repeat(3,1fr); } }
-
-    .hold-card {
-      background: var(--bg-card); border-radius: var(--r-sm);
-      padding: 1.15rem 1.4rem; border: 1px solid var(--border);
-      display: flex; align-items: center; gap: 1rem;
-    }
-    .hold-card.next { border-color: var(--accent); background: rgba(65,105,225,.07); }
-
-    .hold-date-blk {
-      background: var(--bg-2); border-radius: 8px;
-      padding: .5rem .75rem; text-align: center; min-width: 52px; flex-shrink: 0;
-    }
-    .hold-card.next .hold-date-blk { background: var(--accent); color: #fff; }
-    .hold-day   { font-size: 1.5rem; font-weight: 900; line-height: 1; }
-    .hold-month { font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
-
-    .hold-next-lbl { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: .3rem; }
-    .hold-info strong { display: block; font-size: .88rem; font-weight: 700; }
-    .hold-info span   { font-size: .78rem; color: var(--muted); }
-
     /* ── ADHD SECTION ── */
     .adhd-section {
       background: linear-gradient(135deg, #fff8ee 0%, #fff3e0 100%);
@@ -673,14 +649,14 @@
         </ul>
       </nav>
 
-      <a href="#tilmeld" class="btn btn-wa nav-tilmeld">Tilmeld dig</a>
+      <a href="#tilmeld-drivepilot" class="btn btn-wa nav-tilmeld">Tilmeld dig</a>
 
       <a href="tel:+4560441223" class="btn btn-wa nav-wa">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
         60 44 12 23
       </a>
 
-      <a href="#tilmeld" class="btn btn-wa mob-tilmeld">Tilmeld dig</a>
+      <a href="#tilmeld-drivepilot" class="btn btn-wa mob-tilmeld">Tilmeld dig</a>
 
       <button class="hamburger" id="hamburger" aria-label="Åbn menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -695,7 +671,7 @@
     <a href="#hold-start" onclick="closeMenu()">Hold start</a>
     <a href="#faq"        onclick="closeMenu()">FAQ</a>
     <a href="#kontakt"    onclick="closeMenu()">Kontakt</a>
-    <a href="#tilmeld" class="btn btn-wa m-wa" onclick="closeMenu()">Tilmeld dig</a>
+    <a href="#tilmeld-drivepilot" class="btn btn-wa m-wa" onclick="closeMenu()">Tilmeld dig</a>
     <a href="tel:+4560441223" class="btn btn-wa m-wa" onclick="closeMenu()">
       Ring: 60 44 12 23
     </a>
@@ -890,58 +866,7 @@
         <h2 class="section-title">Næste hold starter</h2>
         <p class="section-sub">Teori hver tirsdag og torsdag kl. 17:00.</p>
 
-        <div class="hold-grid">
-          <div class="hold-card next">
-            <div class="hold-date-blk">
-              <div class="hold-day">11</div>
-              <div class="hold-month">Aug</div>
-            </div>
-            <div class="hold-info">
-              <p class="hold-next-lbl">Næste hold</p>
-              <strong>Tirsdag den 11. august 2026</strong>
-              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
-            </div>
-          </div>
-          <div class="hold-card">
-            <div class="hold-date-blk">
-              <div class="hold-day">15</div>
-              <div class="hold-month">Sep</div>
-            </div>
-            <div class="hold-info">
-              <strong>Tirsdag den 15. september 2026</strong>
-              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
-            </div>
-          </div>
-          <div class="hold-card">
-            <div class="hold-date-blk">
-              <div class="hold-day">27</div>
-              <div class="hold-month">Okt</div>
-            </div>
-            <div class="hold-info">
-              <strong>Tirsdag den 27. oktober 2026</strong>
-              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
-            </div>
-          </div>
-          <div class="hold-card">
-            <div class="hold-date-blk">
-              <div class="hold-day">1</div>
-              <div class="hold-month">Dec</div>
-            </div>
-            <div class="hold-info">
-              <strong>Tirsdag den 1. december 2026</strong>
-              <span>Kl. 17:00 · Enggårdsgade 5, kld.</span>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top:2rem; text-align:center;">
-          <a href="#tilmeld" class="btn btn-wa">
-            Tilmeld dig næste hold
-          </a>
-        </div>
-
-        <div class="tilmeld-card" style="margin-top:2.5rem;">
-          <h3 style="margin:0 0 1.25rem; text-align:center; font-family:var(--font-head); font-size:1.3rem;">Eller tilmeld dig direkte til et hold</h3>
+        <div class="tilmeld-card" id="tilmeld-drivepilot" style="margin-top:2rem; scroll-margin-top:6rem;">
           <iframe src="https://system.drivepilot.dk/drivepilot_signup/65decca3-63ed-12ec-bb04-94e6f751e895/1/" width="100%" height="375" style="border:0; border-radius:var(--r-sm); display:block;" title="Tilmelding via DrivePilot"></iframe>
         </div>
       </div>
