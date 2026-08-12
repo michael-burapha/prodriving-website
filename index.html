@@ -167,8 +167,10 @@
     .logo {
       font-size: 1.2rem; font-weight: 900; letter-spacing: 1.5px;
       text-transform: uppercase; color: var(--text); flex-shrink: 0;
+      display: flex; align-items: center;
     }
     .logo span { color: var(--accent); }
+    .logo img { height: 34px; width: auto; display: block; }
 
     .nav-links { display: none; list-style: none; gap: 1.75rem; align-items: center; }
     .nav-links a { font-size: .88rem; font-weight: 600; color: var(--muted); transition: color .15s; }
@@ -637,7 +639,7 @@
   <!-- ── HEADER ── -->
   <header class="header">
     <div class="container header-inner">
-      <a href="#top" class="logo">Pro<span>Driving</span></a>
+      <a href="#top" class="logo"><img src="images/prodriving-logo.png" alt="ProDriving" /></a>
 
       <nav aria-label="Primær navigation">
         <ul class="nav-links">
