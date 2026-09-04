@@ -535,7 +535,10 @@
     .prose ul, .prose ol { margin: 0 0 1.25rem 1.25rem; }
     .prose li { color: var(--muted); line-height: 1.85; font-size: .95rem; margin-bottom: .3rem; }
     .prose strong { color: var(--text); font-weight: 700; }
-    .prose a { color: var(--accent); text-decoration: underline; }
+    /* Body-text links only. Without the :not()s this also hits buttons and
+       cards inside .prose and beats their own colour rules on specificity --
+       which rendered the blue CTA button as blue text on a blue background. */
+    .prose a:not(.btn):not(.related-card) { color: var(--accent); text-decoration: underline; }
 
     /* Package/include box */
     .pakke-box {
