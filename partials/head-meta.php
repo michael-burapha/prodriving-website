@@ -12,6 +12,12 @@ $page_canonical      = $page_canonical      ?? 'https://prodriving.dk/';
 $page_og_title       = $page_og_title       ?? $page_title;
 $page_og_description = $page_og_description ?? $page_description;
 $extra_schema        = $extra_schema        ?? '';
+
+// Cache-bust the stylesheet on every change. Cloudflare caches /assets/style.css
+// by URL for hours, so without this a CSS fix stays invisible behind a stale
+// edge copy until the TTL expires or someone purges by hand.
+$css_path    = dirname(__DIR__) . '/assets/style.css';
+$css_version = is_file($css_path) ? filemtime($css_path) : '1';
 ?>
 <head>
   <meta name="google-site-verification" content="en-oxu0T_jFo_1_TxHpR9KvoNVPj5XH7UAef7BUERes" />
@@ -69,5 +75,5 @@ $extra_schema        = $extra_schema        ?? '';
   </script>
 
 <?= $extra_schema ?>
-  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css?v=<?= $css_version ?>" />
 </head>
