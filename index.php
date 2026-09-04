@@ -260,6 +260,9 @@ require __DIR__ . '/partials/header.php';
             <p style="color:var(--muted); font-size:.93rem; line-height:1.75; margin-bottom:1.5rem;">
               ProDriving er den eneste køreskole i Aalborg, der aktivt tager dette hensyn i undervisningen.
             </p>
+            <p style="margin-bottom:1.5rem;">
+              <a class="ydelse-more" href="/guides/korekort-adhd-ordblindhed/">Læs mere om kørekort med ADHD eller ordblindhed →</a>
+            </p>
             <div class="adhd-points">
               <div class="adhd-point">
                 <span class="adhd-point-icon">👥</span>

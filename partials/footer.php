@@ -32,6 +32,7 @@ $h = $is_home ? '' : '/';
             <li><a href="<?= $h ?>#priser">Priser</a></li>
             <li><a href="<?= $h ?>#hold-start">Hold start</a></li>
             <li><a href="<?= $h ?>#faq">FAQ</a></li>
+            <li><a href="/guides/">Guides</a></li>
             <li><a href="<?= $h ?>#om">Om Carina</a></li>
           </ul>
         </div>

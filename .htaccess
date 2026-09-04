@@ -23,6 +23,15 @@ RewriteRule ^([^/]+)$ /$1/ [R=301,L]
 RewriteCond %{DOCUMENT_ROOT}/$1.php -f
 RewriteRule ^([^/]+)/$ $1.php [L]
 
+# 4. Same, one level deep: /guides/<slug>/ -> guides/<slug>.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1/$2.php -f
+RewriteRule ^([^/]+)/([^/]+)$ /$1/$2/ [R=301,L]
+
+RewriteCond %{DOCUMENT_ROOT}/$1/$2.php -f
+RewriteRule ^([^/]+)/([^/]+)/$ $1/$2.php [L]
+
 # ── Caching for static assets ─────────────────────────────────────────────
 <IfModule mod_expires.c>
   ExpiresActive On

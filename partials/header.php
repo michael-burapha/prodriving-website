@@ -86,6 +86,7 @@ $h = $is_home ? '' : '/';
           <li><a href="<?= $h ?>#priser">Priser</a></li>
           <li><a href="<?= $h ?>#hold-start">Hold start</a></li>
           <li><a href="<?= $h ?>#faq">FAQ</a></li>
+          <li><a href="/guides/">Guides</a></li>
           <li><a href="<?= $h ?>#kontakt">Kontakt</a></li>
         </ul>
       </nav>
@@ -111,6 +112,7 @@ $h = $is_home ? '' : '/';
     <a href="<?= $h ?>#priser"     onclick="closeMenu()">Priser</a>
     <a href="<?= $h ?>#hold-start" onclick="closeMenu()">Hold start</a>
     <a href="<?= $h ?>#faq"        onclick="closeMenu()">FAQ</a>
+    <a href="/guides/"             onclick="closeMenu()">Guides</a>
     <a href="<?= $h ?>#kontakt"    onclick="closeMenu()">Kontakt</a>
     <a href="<?= $h ?>#tilmeld-drivepilot" class="btn btn-wa m-wa" onclick="closeMenu()">Tilmeld dig</a>
     <a href="tel:+4560441223" class="btn btn-wa m-wa" onclick="closeMenu()">
