@@ -1,0 +1,38 @@
+# ── Clean URLs ────────────────────────────────────────────────────────────
+# /generhvervelse-aalborg/  →  generhvervelse-aalborg.php
+# Any direct .php hit is 301'd to the clean URL so Google only indexes one
+# version of each page.
+
+RewriteEngine On
+
+# 1. Redirect direct .php requests to the trailing-slash clean URL
+RewriteCond %{THE_REQUEST} \s/+([^.\s?]+)\.php[\s?] [NC]
+RewriteRule ^ /%1/ [R=301,L]
+
+# 2. Add trailing slash where the .php file exists (e.g. /generhvervelse-aalborg)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^([^/]+)$ /$1/ [R=301,L]
+
+# 3. Serve the .php file for the clean URL
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^([^/]+)/$ $1.php [L]
+
+# ── Caching for static assets ─────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css          "access plus 1 month"
+  ExpiresByType image/jpeg        "access plus 1 year"
+  ExpiresByType image/png         "access plus 1 year"
+  ExpiresByType image/x-icon      "access plus 1 year"
+  ExpiresByType video/mp4         "access plus 1 year"
+</IfModule>
+
+# ── Don't serve the mail config or partials directly ──────────────────────
+<FilesMatch "^mail-config\.php$">
+  Require all denied
+</FilesMatch>
+
+RewriteRule ^partials/ - [F,L]
+RewriteRule ^phpmailer/ - [F,L]
