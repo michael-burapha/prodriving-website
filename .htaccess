@@ -5,6 +5,10 @@
 
 RewriteEngine On
 
+# 0. Leave the form endpoint alone. Rewriting it would 301 the POST to /send/,
+#    and browsers drop the request body on a 301 -- silently breaking the form.
+RewriteRule ^send\.php$ - [L]
+
 # 1. Redirect direct .php requests to the trailing-slash clean URL
 RewriteCond %{THE_REQUEST} \s/+([^.\s?]+)\.php[\s?] [NC]
 RewriteRule ^ /%1/ [R=301,L]
