@@ -483,6 +483,12 @@
     }
 
     /* ── SUBPAGE / SERVICE PAGES ── */
+    /* The hero's height comes from the text column, so on wide screens the image
+       box gets wider without getting taller -- and a portrait photo loses more
+       and more off the top. Floor the height so the crop can't run away. */
+    @media (min-width: 1500px) { .page-hero { min-height: 620px; display: flex; align-items: center; } }
+    @media (min-width: 1900px) { .page-hero { min-height: 700px; } }
+
     .page-hero {
       position: relative; padding: 3rem 0;
       background: var(--bg-2); border-bottom: 1px solid var(--border);

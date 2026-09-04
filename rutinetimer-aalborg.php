@@ -52,7 +52,8 @@ require __DIR__ . '/partials/header.php';
 <main>
 
   <section class="page-hero">
-    <img class="page-hero-img" src="/images/koereelev-prodriving-bil-aalborg.jpg" alt="Bilist bag rattet under rutinetimer i Aalborg" />
+    <!-- Portrait source in a wide box: bias the crop upward so her head stays in frame. -->
+    <img class="page-hero-img" style="object-position: 50% 30%;" src="/images/koereelev-prodriving-bil-aalborg.jpg" alt="Bilist bag rattet under rutinetimer i Aalborg" />
     <div class="container">
       <nav class="breadcrumb" aria-label="Brødkrumme">
         <ol>
