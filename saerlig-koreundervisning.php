@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <?php
-$page_title       = 'Særlig køreundervisning i Aalborg – kørselsforbud | ProDriving';
+$page_title       = 'Særlig køreundervisning i Aalborg | ProDriving';
 $page_description = 'Har du fået kørselsforbud som ny bilist? Særlig køreundervisning er et lovkrav. Fri teori, 8 kørelektioner og billeje i Aalborg – 7.995 kr.';
 $page_canonical   = 'https://prodriving.dk/saerlig-koreundervisning/';
 $page_og_title    = 'Særlig køreundervisning i Aalborg – ProDriving';
