@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <?php
-$page_title       = 'Nye kørekortregler fra 1. juli 2026 – hvad betyder de? | ProDriving';
+$page_title       = 'Nye kørekortregler fra 1. juli 2026 | ProDriving';
 $page_description = 'Fra 1. juli 2026 erstatter moduler lektioner i den danske køreuddannelse. Se hvad der ændrer sig, og hvorfor det kan betale sig at starte inden.';
 $page_canonical   = 'https://prodriving.dk/guides/nye-korekortregler-2026/';
 $page_og_title    = 'Nye kørekortregler fra 1. juli 2026';
