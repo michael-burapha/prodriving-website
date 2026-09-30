@@ -70,7 +70,8 @@ $css_version = is_file($css_path) ? filemtime($css_path) : '1';
     "description": "Køreskole i Aalborg med små hold. Særligt hensyn til ADHD og ordblindhed. Kørekort til bil, generhvervelse, særlig køreundervisning og rutinetimer.",
     "currenciesAccepted": "DKK",
     "priceRange": "kr 650 – kr 12.995",
-    "founder": { "@type": "Person", "name": "Carina Hansen" }
+    "founder": { "@type": "Person", "name": "Carina Hansen" },
+    "sameAs": ["https://maps.google.com/?cid=4831068671964564090"]
   }
   </script>
 
