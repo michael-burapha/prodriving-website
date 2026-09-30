@@ -424,7 +424,7 @@ require __DIR__ . '/partials/header.php';
             />
           </div>
           <div class="om-text">
-            <p>Carina Hansen er kørelærer og ejer af ProDriving i Aalborg. Med over <strong>14 års erfaring</strong> bag rattet som underviser har hun tid og ro til at møde hver elev, der hvor de er.</p>
+            <p>Carina Hansen er kørelærer og ejer af ProDriving i Aalborg. Med over <strong>14 års erfaring</strong> bag rattet som underviser har hun tid og ro til at møde hver elev, der hvor de er. ProDriving overtog køreskolen på Enggårdsgade 5 i august 2026. Det er samme adresse og samme kørelærer som hos Frisdal Køreskole i Aalborg, der i dag kun underviser i Hobro.</p>
             <p>Carina har erfaring med elever med <strong>særlige udfordringer</strong> – herunder ADHD, ADD og ordblindhed. Hun tilpasser undervisningen til den enkelte, så alle kan lykkes uanset forudsætninger.</p>
             <p>ProDriving tilbyder kørekort til bil, generhvervelse, særlig køreundervisning samt rutinetimer i både manuel og automatgear. Skolen holder til i kælderen på Enggårdsgade 5 i Aalborg centrum.</p>
             <a href="tel:+4560441223" class="btn btn-wa" style="margin-top:1.5rem;">
