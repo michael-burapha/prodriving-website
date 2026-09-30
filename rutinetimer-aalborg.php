@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <?php
-$page_title       = 'Rutinetimer i Aalborg – kørelektioner uden forpligtelse | ProDriving';
+$page_title       = 'Rutinetimer i Aalborg | ProDriving';
 $page_description = 'Har du kørekort, men mangler rutine bag rattet? Book rutinetimer i Aalborg hos ProDriving. Manuel gear eller automatgear – 650 kr pr. lektion inkl. moms.';
 $page_canonical   = 'https://prodriving.dk/rutinetimer-aalborg/';
 $page_og_title    = 'Rutinetimer i Aalborg – ProDriving';
