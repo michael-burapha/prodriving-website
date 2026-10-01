@@ -296,13 +296,23 @@ require __DIR__ . '/partials/header.php';
               loading="lazy"
               width="900" height="675"
             />
-            <div style="display:flex;gap:.65rem;align-items:flex-start;">
+            <div style="display:flex;gap:.65rem;align-items:stretch;">
               <video
                 src="/videos/bestaaet-elev-prodriving-aalborg.mp4"
                 style="width:42%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--r-sm);display:block;flex-shrink:0;"
                 autoplay muted loop playsinline
                 title="Bestået elev hos ProDriving køreskole Aalborg"
               ></video>
+              <!-- Wrapper, not a bare img: a direct flex-item image takes its
+                   intrinsic height instead of stretching to the video. -->
+              <div style="flex:1 1 auto;border-radius:var(--r-sm);overflow:hidden;">
+                <img
+                  src="/images/astrid-bestaaet-korekort-prodriving-aalborg.jpg"
+                  alt="Astrid med sit kørekortbevis efter bestået køreprøve hos ProDriving i Aalborg"
+                  style="width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block;"
+                  loading="lazy" width="480" height="640"
+                />
+              </div>
             </div>
           </div>
         </div>
