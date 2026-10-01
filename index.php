@@ -118,9 +118,9 @@ require __DIR__ . '/partials/header.php';
     <!-- ── YDELSER ── -->
     <section class="section" id="ydelser">
       <div class="container">
-        <p class="section-label">Start inden 1. juli 2026</p>
-        <h2 class="section-title">Færdiggør kørekortet under de nuværende regler</h2>
-        <p class="section-sub">Fra 1. juli ændres køreuddannelsen i Danmark – lektioner erstattes af moduler og pensum udvides. Starter du nu, kan du færdiggøre hele forløbet under de regler du kender, frem til 31. december 2026. Vi tilbyder alt hvad du har brug for.</p>
+        <p class="section-label">Køreuddannelsen 2026</p>
+        <h2 class="section-title">Den nye moduluddannelse – i dit tempo</h2>
+        <p class="section-sub">Siden 1. juli 2026 er køreuddannelsen i Danmark bygget op af moduler, der bygger oven på hinanden, og pensum er udvidet med blandt andet elbiler og hybridbiler. Vi underviser efter de nye regler – med små hold og tid til dig. Er du startet før 1. juli 2026, kan du stadig færdiggøre forløbet under de tidligere regler frem til 31. december 2026.</p>
 
         <div class="ydelser-grid">
           <div class="ydelse-card">
@@ -161,7 +161,7 @@ require __DIR__ . '/partials/header.php';
         <div class="info-banner">
           <span class="bi">ℹ️</span>
           <div>
-            <strong>Nye regler fra 1. juli 2026:</strong> Køreuddannelsen moderniseres – moduler erstatter lektioner, og elbiler/hybridbiler tilføjes pensum. Starter du inden 1. juli, kan du færdiggøre forløbet under de nuværende regler frem til 31. december 2026.
+            <strong>Nye regler siden 1. juli 2026:</strong> Køreuddannelsen er nu bygget op af moduler, og elbiler/hybridbiler indgår i pensum. Er du startet før 1. juli 2026, kan du færdiggøre forløbet under de tidligere regler frem til 31. december 2026.
             <a href="#faq" style="color:var(--accent); margin-left:.25rem;">Læs mere i FAQ →</a>
           </div>
         </div>
@@ -309,6 +309,36 @@ require __DIR__ . '/partials/header.php';
       </div>
     </section>
 
+    <!-- ── BESTÅEDE ELEVER ──
+         Add a new .elev-card per student. Drop ".is-single" from .elever-grid
+         once there is more than one, so they lay out as a grid. -->
+    <section class="section priser-bg" id="bestaaede-elever">
+      <div class="container">
+        <p class="section-label">Beståede elever</p>
+        <h2 class="section-title">Stort tillykke 🎉</h2>
+        <p class="section-sub">Vi fejrer hver eneste elev, der kommer igennem. Her er dem, der har bestået hos ProDriving.</p>
+
+        <div class="elever-grid is-single">
+
+          <div class="elev-card">
+            <div class="elev-media">
+              <img
+                src="/images/astrid-bestaaet-korekort-prodriving-aalborg.jpg"
+                alt="Astrid med sit kørekortbevis efter bestået køreprøve hos ProDriving i Aalborg"
+                loading="lazy" width="480" height="640"
+              />
+            </div>
+            <div class="elev-body">
+              <span class="elev-badge">Første elev hos ProDriving</span>
+              <h3>Astrid</h3>
+              <p>Alt bestået i første forsøg – både teori og køreprøve. Stærkt gået, og så ses vi på vejene i stedet! 🥳</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- ── FAQ ── -->
     <section class="section" id="faq">
       <div class="container">
@@ -397,9 +427,9 @@ require __DIR__ . '/partials/header.php';
 
 
           <div class="faq-item">
-            <button class="faq-q">Hvad sker der med de nye kørekortregler fra 1. juli 2026? <span class="faq-chevron">▼</span></button>
+            <button class="faq-q">Hvad betyder de nye kørekortregler fra 1. juli 2026? <span class="faq-chevron">▼</span></button>
             <div class="faq-a"><div class="faq-a-inner">
-              Fra 1. juli 2026 moderniseres køreuddannelsen i Danmark. Lektioner erstattes af moduler, der bygger oven på hinanden, og pensum udvides med elbiler, hybridbiler og miljøvenlig kørsel. Starter du inden 1. juli 2026, kan du færdiggøre dit kørekort under de nuværende regler frem til 31. december 2026.
+              Siden 1. juli 2026 er køreuddannelsen i Danmark moderniseret. Lektioner er erstattet af moduler, der bygger oven på hinanden, og pensum er udvidet med elbiler, hybridbiler og miljøvenlig kørsel. Starter du nu, følger du den nye moduluddannelse. Er du startet før 1. juli 2026, kan du færdiggøre dit kørekort under de tidligere regler frem til 31. december 2026.
             </div></div>
           </div>
 

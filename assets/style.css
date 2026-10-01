@@ -593,3 +593,56 @@
       font-weight: 700; color: var(--accent); text-decoration: none;
     }
     .ydelse-more:hover { text-decoration: underline; }
+
+    /* ── BESTÅEDE ELEVER ── */
+    .elever-grid {
+      display: grid; grid-template-columns: 1fr; gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+    @media (min-width: 640px) { .elever-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 900px) { .elever-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    .elev-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow);
+      display: flex; flex-direction: column;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .elev-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(26,45,66,.14); }
+    /* The ratio lives on a wrapper, not the img: as a direct flex item the
+       image takes its intrinsic height and ignores aspect-ratio. The wrapper
+       also keeps every card the same shape whatever the photo's own ratio. */
+    .elev-media { aspect-ratio: 3/4; overflow: hidden; }
+    .elev-media img {
+      width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%;
+      display: block;
+    }
+    .elev-body { padding: 1.25rem 1.3rem 1.4rem; }
+    .elev-badge {
+      display: inline-block; font-size: .7rem; font-weight: 700;
+      letter-spacing: 1.2px; text-transform: uppercase; color: var(--accent);
+      background: rgba(65,105,225,.09); border: 1px solid rgba(65,105,225,.2);
+      border-radius: 50px; padding: .28rem .7rem; margin-bottom: .7rem;
+    }
+    .elev-card h3 {
+      font-size: 1.15rem; font-weight: 900; margin-bottom: .4rem; line-height: 1.2;
+    }
+    .elev-card p {
+      font-size: .9rem; color: var(--muted); line-height: 1.7; margin: 0;
+    }
+
+    /* With only one student a column card leaves half the row empty, so the
+       single case lays out side-by-side instead. Remove .is-single when a
+       second .elev-card is added and it reverts to the grid above. */
+    .elever-grid.is-single { grid-template-columns: 1fr; }
+    @media (min-width: 700px) {
+      .elever-grid.is-single .elev-card { flex-direction: row; align-items: stretch; }
+      .elever-grid.is-single .elev-media { flex: 0 0 38%; aspect-ratio: auto; }
+      .elever-grid.is-single .elev-body {
+        flex: 1 1 auto; display: flex; flex-direction: column;
+        justify-content: center; align-items: flex-start; /* keep the badge hugging its text */
+        padding: 2rem 2.25rem;
+      }
+      .elever-grid.is-single .elev-card h3 { font-size: 1.5rem; }
+      .elever-grid.is-single .elev-card p  { font-size: 1rem; max-width: 46ch; }
+    }
