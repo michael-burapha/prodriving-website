@@ -122,7 +122,7 @@ require __DIR__ . '/../partials/header.php';
           </a>
           <a class="related-card" href="/guides/nye-korekortregler-2026/">
             <strong>Nye regler fra 1. juli 2026</strong>
-            <span>Moduler erstatter lektioner. Hvad betyder det for dig?</span>
+            <span>Moduler har erstattet lektioner. Hvad betyder det for dig?</span>
           </a>
         </div>
 

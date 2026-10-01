@@ -48,7 +48,7 @@ require __DIR__ . '/../partials/header.php';
         </a>
         <a class="related-card" href="/guides/nye-korekortregler-2026/">
           <strong>Nye kørekortregler fra 1. juli 2026</strong>
-          <span>Moduler erstatter lektioner. Sådan påvirker det dig, der skal i gang nu.</span>
+          <span>Moduler har erstattet lektioner. Sådan påvirker det dig, der skal i gang nu.</span>
         </a>
         <a class="related-card" href="/guides/korekort-adhd-ordblindhed/">
           <strong>Kørekort med ADHD eller ordblindhed</strong>

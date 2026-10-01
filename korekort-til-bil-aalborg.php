@@ -119,8 +119,8 @@ require __DIR__ . '/partials/header.php';
         <p>Kører du alene om natten uden ledsager, koster det 3.000 kr. ved første overtrædelse, 3.500 kr. ved anden og 4.000 kr. ved tredje.</p>
 
         <h2>Nye kørekortregler fra 1. juli 2026</h2>
-        <p>Fra 1. juli 2026 moderniseres køreuddannelsen i Danmark. Lektioner erstattes af <strong>moduler</strong>, der bygger oven på hinanden, og pensum udvides med elbiler, hybridbiler og miljøvenlig kørsel.</p>
-        <p>Starter du <strong>inden 1. juli 2026</strong>, kan du færdiggøre dit kørekort under de nuværende regler frem til 31. december 2026. Er du i tvivl om, hvad der bedst kan betale sig for dig, så ring – vi kigger på det sammen.</p>
+        <p>Siden 1. juli 2026 er køreuddannelsen i Danmark moderniseret. Lektioner er erstattet af <strong>moduler</strong>, der bygger oven på hinanden, og pensum er udvidet med elbiler, hybridbiler og miljøvenlig kørsel.</p>
+        <p>Starter du nu, følger du den nye moduluddannelse. Er du startet <strong>før 1. juli 2026</strong>, kan du færdiggøre dit kørekort under de tidligere regler frem til 31. december 2026. Er du i tvivl om noget, så ring – vi kigger på det sammen.</p>
 
         <h2>Små hold – og plads til alle</h2>
         <p>Vi kører med små hold, fordi det giver Carina Hansen tid til den enkelte elev. Det betyder mere opmærksomhed, bedre plads til at stille spørgsmål og et roligere læringsmiljø.</p>
