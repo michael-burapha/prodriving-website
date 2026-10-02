@@ -328,7 +328,7 @@ require __DIR__ . '/partials/header.php';
         <h2 class="section-title">Stort tillykke 🎉</h2>
         <p class="section-sub">Vi fejrer hver eneste elev, der kommer igennem. Her er dem, der har bestået hos ProDriving.</p>
 
-        <div class="elever-grid is-single">
+        <div class="elever-grid">
 
           <div class="elev-card">
             <div class="elev-media">
@@ -342,6 +342,21 @@ require __DIR__ . '/partials/header.php';
               <span class="elev-badge">Første elev hos ProDriving</span>
               <h3>Astrid</h3>
               <p>Alt bestået i første forsøg – både teori og køreprøve. Stærkt gået, og så ses vi på vejene i stedet! 🥳</p>
+            </div>
+          </div>
+
+          <div class="elev-card">
+            <div class="elev-media">
+              <img
+                src="/images/patrick-bestaaet-korekort-prodriving-aalborg.jpg"
+                alt="Patrick med sit kørekortbevis ved ProDrivings skolevogn i Aalborg"
+                loading="lazy" width="800" height="1067"
+              />
+            </div>
+            <div class="elev-body">
+              <span class="elev-badge">Bestået i første forsøg</span>
+              <h3>Patrick</h3>
+              <p>Når der er plads til at tage det i sit eget tempo, går det hele som smurt. Både teori- og køreprøve klaret i første forsøg. Så flot! 💪</p>
             </div>
           </div>
 

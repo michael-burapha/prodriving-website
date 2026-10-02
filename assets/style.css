@@ -599,8 +599,13 @@
       display: grid; grid-template-columns: 1fr; gap: 1.25rem;
       margin-top: 2.5rem;
     }
-    @media (min-width: 640px) { .elever-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 900px) { .elever-grid { grid-template-columns: repeat(3, 1fr); } }
+    /* Capped tracks rather than 1fr: with a fixed column count any non-full
+       row left a gap, and with 1fr two cards stretched to ~550px, blowing the
+       portrait photos up. This fits as many ~340px cards as the row allows,
+       so 2, 3, 5 students all sit correctly without a rule per count. */
+    @media (min-width: 640px) {
+      .elever-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 340px)); }
+    }
 
     .elev-card {
       background: var(--bg-card); border: 1px solid var(--border);
