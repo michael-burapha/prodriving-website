@@ -296,21 +296,24 @@ require __DIR__ . '/partials/header.php';
               loading="lazy"
               width="900" height="675"
             />
+            <!-- Two real students. Wrappers rather than bare imgs: a direct
+                 flex-item image takes its intrinsic height instead of
+                 matching its neighbour. -->
             <div style="display:flex;gap:.65rem;align-items:stretch;">
-              <video
-                src="/videos/bestaaet-elev-prodriving-aalborg.mp4"
-                style="width:42%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--r-sm);display:block;flex-shrink:0;"
-                autoplay muted loop playsinline
-                title="Bestået elev hos ProDriving køreskole Aalborg"
-              ></video>
-              <!-- Wrapper, not a bare img: a direct flex-item image takes its
-                   intrinsic height instead of stretching to the video. -->
-              <div style="flex:1 1 auto;border-radius:var(--r-sm);overflow:hidden;">
+              <div style="flex:1 1 0;aspect-ratio:3/4;border-radius:var(--r-sm);overflow:hidden;">
                 <img
                   src="/images/astrid-bestaaet-korekort-prodriving-aalborg.jpg"
                   alt="Astrid med sit kørekortbevis efter bestået køreprøve hos ProDriving i Aalborg"
                   style="width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block;"
                   loading="lazy" width="480" height="640"
+                />
+              </div>
+              <div style="flex:1 1 0;aspect-ratio:3/4;border-radius:var(--r-sm);overflow:hidden;">
+                <img
+                  src="/images/patrick-bestaaet-korekort-prodriving-aalborg.jpg"
+                  alt="Patrick med sit kørekortbevis ved ProDrivings skolevogn i Aalborg"
+                  style="width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block;"
+                  loading="lazy" width="800" height="1067"
                 />
               </div>
             </div>
