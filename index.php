@@ -331,37 +331,67 @@ require __DIR__ . '/partials/header.php';
         <h2 class="section-title">Stort tillykke 🎉</h2>
         <p class="section-sub">Vi fejrer hver eneste elev, der kommer igennem. Her er dem, der har bestået hos ProDriving.</p>
 
+<?php
+// Add a student by appending one entry. "facebook" is the link to Carina's
+// Facebook post about that student -- leave it empty and the "Synes godt om"
+// button is simply left out for that card.
+$elever = [
+  [
+    'navn'     => 'Astrid',
+    'badge'    => 'Første elev hos ProDriving',
+    'tekst'    => 'Alt bestået i første forsøg – både teori og køreprøve. Stærkt gået, og så ses vi på vejene i stedet! 🥳',
+    'foto'     => '/images/astrid-bestaaet-korekort-prodriving-aalborg.jpg',
+    'bredde'   => 480,  'hoejde' => 640,
+    'alt'      => 'Astrid med sit kørekortbevis efter bestået køreprøve hos ProDriving i Aalborg',
+    'facebook' => '',
+  ],
+  [
+    'navn'     => 'Patrick',
+    'badge'    => 'Bestået i første forsøg',
+    'tekst'    => 'Når der er plads til at tage det i sit eget tempo, går det hele som smurt. Både teori- og køreprøve klaret i første forsøg. Så flot! 💪',
+    'foto'     => '/images/patrick-bestaaet-korekort-prodriving-aalborg.jpg',
+    'bredde'   => 800,  'hoejde' => 1067,
+    'alt'      => 'Patrick med sit kørekortbevis ved ProDrivings skolevogn i Aalborg',
+    'facebook' => '',
+  ],
+];
+$del_url = rawurlencode('https://prodriving.dk/#bestaaede-elever');
+?>
         <div class="elever-grid">
+<?php foreach ($elever as $e): ?>
 
           <div class="elev-card">
             <div class="elev-media">
               <img
-                src="/images/astrid-bestaaet-korekort-prodriving-aalborg.jpg"
-                alt="Astrid med sit kørekortbevis efter bestået køreprøve hos ProDriving i Aalborg"
-                loading="lazy" width="480" height="640"
+                src="<?= htmlspecialchars($e['foto']) ?>"
+                alt="<?= htmlspecialchars($e['alt']) ?>"
+                loading="lazy" width="<?= (int)$e['bredde'] ?>" height="<?= (int)$e['hoejde'] ?>"
               />
             </div>
             <div class="elev-body">
-              <span class="elev-badge">Første elev hos ProDriving</span>
-              <h3>Astrid</h3>
-              <p>Alt bestået i første forsøg – både teori og køreprøve. Stærkt gået, og så ses vi på vejene i stedet! 🥳</p>
-            </div>
-          </div>
+              <span class="elev-badge"><?= htmlspecialchars($e['badge']) ?></span>
+              <h3><?= htmlspecialchars($e['navn']) ?></h3>
+              <p><?= htmlspecialchars($e['tekst']) ?></p>
 
-          <div class="elev-card">
-            <div class="elev-media">
-              <img
-                src="/images/patrick-bestaaet-korekort-prodriving-aalborg.jpg"
-                alt="Patrick med sit kørekortbevis ved ProDrivings skolevogn i Aalborg"
-                loading="lazy" width="800" height="1067"
-              />
-            </div>
-            <div class="elev-body">
-              <span class="elev-badge">Bestået i første forsøg</span>
-              <h3>Patrick</h3>
-              <p>Når der er plads til at tage det i sit eget tempo, går det hele som smurt. Både teori- og køreprøve klaret i første forsøg. Så flot! 💪</p>
+              <div class="elev-actions">
+                <a class="elev-btn elev-btn-share"
+                   href="https://www.facebook.com/sharer/sharer.php?u=<?= $del_url ?>"
+                   target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+                  Del på Facebook
+                </a>
+<?php if (!empty($e['facebook'])): ?>
+                <a class="elev-btn elev-btn-like"
+                   href="<?= htmlspecialchars($e['facebook']) ?>"
+                   target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M2 21h2V9H2v12zM22.5 10.5c0-1.1-.9-2-2-2h-5.3l.8-3.8v-.3c0-.4-.2-.8-.4-1.1L14.7 2 8.6 8.1c-.4.4-.6.9-.6 1.4v9c0 1.1.9 2 2 2h8c.8 0 1.5-.5 1.8-1.2l2.6-6.1c.1-.2.1-.4.1-.6v-2.1z"/></svg>
+                  Synes godt om
+                </a>
+<?php endif; ?>
+              </div>
             </div>
           </div>
+<?php endforeach; ?>
 
         </div>
       </div>

@@ -651,3 +651,27 @@
       .elever-grid.is-single .elev-card h3 { font-size: 1.5rem; }
       .elever-grid.is-single .elev-card p  { font-size: 1rem; max-width: 46ch; }
     }
+
+    /* Share / like buttons on student cards.
+       Plain links to Facebook -- deliberately NOT the Facebook SDK or the
+       official Like widget, which would load third-party scripts and set
+       tracking cookies. The site states it uses only technically necessary
+       cookies, and that stays true this way. */
+    .elev-actions {
+      display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.1rem;
+    }
+    .elev-btn {
+      display: inline-flex; align-items: center; gap: .4rem;
+      font-size: .82rem; font-weight: 700; text-decoration: none;
+      padding: .5rem .9rem; border-radius: 50px;
+      transition: background .15s, border-color .15s, transform .15s;
+      white-space: nowrap;
+    }
+    .elev-btn:hover { transform: translateY(-1px); }
+    .elev-btn-share { background: #1877F2; color: #fff; }
+    .elev-btn-share:hover { background: #1465d8; }
+    .elev-btn-like {
+      background: transparent; color: var(--text);
+      border: 1.5px solid rgba(26,45,66,.22);
+    }
+    .elev-btn-like:hover { border-color: rgba(26,45,66,.45); }
