@@ -72,6 +72,17 @@ require __DIR__ . '/../partials/header.php';
         </ul>
         <p>Starter du nu, følger du den nye moduluddannelse. <strong>Er du startet før 1. juli 2026, kan du færdiggøre dit kørekort under de tidligere regler frem til 31. december 2026.</strong></p>
 
+        <h2>Den nye køreuddannelse 2026 – hvad ændrer sig?</h2>
+        <p>Kort oversigt over, hvad der er anderledes i den nye køreuddannelse sammenlignet med den tidligere:</p>
+        <ul>
+          <li><strong>Opbygningen:</strong> moduler, der bygger oven på hinanden, i stedet for enkeltlektioner.</li>
+          <li><strong>Sammenhæng mellem teori og praktik:</strong> det, du læser om, prøver du af bag rattet kort efter.</li>
+          <li><strong>Nyt i pensum:</strong> elbiler, hybridbiler og miljøvenlig kørsel.</li>
+          <li><strong>Overgangsordning:</strong> er du startet før 1. juli 2026, kan du gøre færdig efter de tidligere regler frem til 31. december 2026.</li>
+        </ul>
+        <p>Selve kravet om teoriprøve og praktisk køreprøve er uændret – det er vejen derhen, der er lagt om. De officielle regler og den fulde ordlyd finder du hos <a href="https://www.fstyr.dk/privat/koerekort" target="_blank" rel="noopener">Færdselsstyrelsen</a>.</p>
+        <p>Skal du i gang med dit første kørekort under de nye regler, kan du læse hele forløbet og prisen på siden om <a href="/korekort-til-bil-aalborg/">kørekort til bil i Aalborg</a>.</p>
+
         <h2>Hvad betyder “moduler” i praksis?</h2>
         <p>Tidligere bestod køreuddannelsen af et fast antal lektioner – teori, manøvrebane, kørsel på vej, mørkekørsel og køreteknisk anlæg. Siden 1. juli 2026 er indholdet i stedet organiseret i moduler, hvor hvert modul bygger videre på det forrige.</p>
         <p>Tanken bag er mere sammenhæng: at teori og praktik følges tættere ad, så det du læser om, er det du kort efter prøver bag rattet.</p>

@@ -142,7 +142,7 @@ require __DIR__ . '/partials/header.php';
             <div class="ydelse-icon">🚗</div>
             <h3>Kørekort til bil</h3>
             <p>Få dit første kørekort med personlig undervisning. Du kan starte allerede som 16 år og 9 måneder. Vi kører i både manuel og automatgear.</p>
-            <a class="ydelse-more" href="/korekort-til-bil-aalborg/">Læs mere om kørekort til bil i Aalborg →</a>
+            <a class="ydelse-more" href="/korekort-til-bil-aalborg/">Læs mere om kørekort til bil i Aalborg →</a><br><a class="ydelse-more" href="/automatgear-aalborg/">Kørekort til automatgear →</a>
           </div>
           <div class="ydelse-card">
             <div class="ydelse-icon">📋</div>

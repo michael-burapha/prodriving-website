@@ -20,6 +20,7 @@ $h = $is_home ? '' : '/';
           <h4>Ydelser</h4>
           <ul class="footer-links">
             <li><a href="/korekort-til-bil-aalborg/">Kørekort til bil</a></li>
+            <li><a href="/automatgear-aalborg/">Automatgear</a></li>
             <li><a href="/generhvervelse-aalborg/">Generhvervelse</a></li>
             <li><a href="/saerlig-koreundervisning/">Særlig køreundervisning</a></li>
             <li><a href="/rutinetimer-aalborg/">Rutinetimer</a></li>
