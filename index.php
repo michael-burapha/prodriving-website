@@ -39,6 +39,21 @@ $extra_schema = <<<'SCHEMA'
         "@type": "Question",
         "name": "Regler for 17-årige",
         "acceptedAnswer": { "@type": "Answer", "text": "Fra 1. juli 2025 må 17-årige køre alene kl. 05:00–20:00. Om natten (20:00–05:00) kræves en ledsager på mindst 24 år med dansk kørekort i mindst 5 år, som ikke har fået kørekortet frakendt inden for de seneste 5 år. Kører du alene om natten, koster det 3.000–4.000 kr. i bøde. Fuld selvstændighed opnås først ved 18 år." }
+      },
+      {
+        "@type": "Question",
+        "name": "Hvor får jeg et førstehjælpskursus til kørekort i Aalborg?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Et færdselsrelateret førstehjælpskursus er lovpligtigt, første gang du tager kørekort. Kurset varer typisk 8 timer, fordelt på hjertestop og færdselsrelateret førstehjælp, og skal tages hos en udbyder godkendt af Dansk Førstehjælpsråd – fx Røde Kors, som holder kurser i Aalborg. Beviset må højst være 1 år gammelt, når du søger om kørekort, og et almindeligt førstehjælpskursus tæller ikke. Prisen er ca. 700 kr og betales til kursusudbyderen, ikke til køreskolen." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan man tage kørekort på 2 uger?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Hvor hurtigt du kan blive færdig afhænger mest af, hvor hurtigt du kommer igennem modulerne, og hvornår der er ledige tider til teoriprøve og køreprøve hos Færdselsstyrelsens prøvested. I perioder er der ventetid på prøverne. ProDriving starter nye hold løbende med teori hver tirsdag og torsdag kl. 17:00 og tilrettelægger forløbet efter den enkelte elev." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan jeg betale kørekortet i rater?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja. Hos ProDriving er delbetaling mulig – pakken kan deles over to betalinger. Gebyrer til Færdselsstyrelsen, lægeattest og førstehjælpskursus betales direkte til den pågældende udbyder og ligger uden for køreskolens betaling." }
       }
     ]
   }
@@ -486,6 +501,35 @@ $del_url = rawurlencode('https://prodriving.dk/#bestaaede-elever');
             </div></div>
           </div>
 
+
+          <div class="faq-item">
+            <button class="faq-q">Hvor får jeg et førstehjælpskursus til kørekort i Aalborg? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Et <strong>færdselsrelateret førstehjælpskursus</strong> er lovpligtigt, første gang du tager kørekort. Kurset varer typisk 8 timer, fordelt på hjertestop og færdselsrelateret førstehjælp, og det skal tages hos en udbyder, der er godkendt af Dansk Førstehjælpsråd – fx Røde Kors, som holder kurser i Aalborg.<br><br>
+              Et par ting at være opmærksom på:
+              <ul style="margin:.5rem 0 .75rem 1.2rem; line-height:1.9;">
+                <li>Beviset må højst være 1 år gammelt, når du søger om kørekort</li>
+                <li>Et almindeligt førstehjælpskursus tæller ikke – det skal være det færdselsrelaterede</li>
+                <li>Prisen er ca. 700 kr og betales til kursusudbyderen, ikke til køreskolen</li>
+              </ul>
+              Er du i tvivl om, hvornår du skal tage det, så spørg Carina – så planlægger vi det ind i forløbet.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Kan man tage kørekort på 2 uger? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Hvor hurtigt du kan blive færdig, afhænger mest af to ting, og ingen af dem er køreskolen herre over: hvor hurtigt du kommer igennem modulerne, og hvornår der er ledige tider til teoriprøve og køreprøve hos Færdselsstyrelsens prøvested. I perioder er der ventetid på prøverne.<br><br>
+              Vi starter nye hold løbende med teori hver tirsdag og torsdag kl. 17:00, og vi lægger forløbet, så det passer til dig. Har du en bestemt dato, du skal nå – fx et studie eller et job – så ring og fortæl os det, så siger vi ærligt, om det kan lade sig gøre.
+            </div></div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">Kan jeg betale kørekortet i rater? <span class="faq-chevron">▼</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Ja. Delbetaling er mulig – du kan dele pakken over to betalinger. Ring til Carina på 60 44 12 23, så finder vi en løsning, der passer. Husk, at gebyrer til Færdselsstyrelsen, lægeattest og førstehjælpskursus betales direkte til dem, det nu er, og derfor ligger uden for køreskolens betaling.
+            </div></div>
+          </div>
 
           <div class="faq-item">
             <button class="faq-q">Hvad betyder de nye kørekortregler fra 1. juli 2026? <span class="faq-chevron">▼</span></button>

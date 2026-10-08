@@ -81,6 +81,27 @@ require __DIR__ . '/partials/header.php';
         <p>Generhvervelse er forløbet for dig, der har <strong>mistet dit kørekort enten betinget eller ubetinget</strong>. For at få kørekortet igen skal du bestå både en <strong>teoretisk og en praktisk prøve</strong>.</p>
         <p>Det kan virke uoverskueligt at skulle op til prøve igen – især hvis der er gået nogle år, siden du sad på skolebænken. Derfor er forløbet hos ProDriving individuelt tilpasset: vi tager udgangspunkt i, hvor du står, i stedet for at køre dig gennem et standardprogram.</p>
 
+        <h2>Betinget eller ubetinget frakendelse – hvad er forskellen?</h2>
+        <p>Det er det spørgsmål, vi oftest får. De to ting lyder ens, men de betyder noget forskelligt for, hvornår du kan køre igen.</p>
+
+        <h3>Betinget frakendelse</h3>
+        <p>Her <strong>beholder du kørekortet</strong>, hvis du består en kontrollerende køreprøve og ikke får en ny frakendelse i en prøveperiode på tre år. Du får en indkaldelse i Digital Post og skal normalt bestå prøven inden for <strong>6 måneder</strong> fra indkaldelsen. Består du ikke, bliver kørekortet inddraget på prøvestedet, og du må ikke køre, før du har bestået.</p>
+
+        <h3>Ubetinget frakendelse</h3>
+        <p>Her <strong>mister du kørekortet i en periode</strong>. Du kan først få det igen, når perioden er udløbet, og du har bestået den kontrollerende køreprøve. Du kan søge om generhvervelse fra <strong>6 måneder før</strong> perioden slutter. Er frakendelsen under 3 år, giver en bestået prøve i kategori B dine øvrige kategorier tilbage; er den på 3 år eller mere, skal du op i hver kategori, du vil have igen.</p>
+
+        <p>I begge tilfælde består den kontrollerende køreprøve af <strong>både en teoriprøve og en praktisk prøve</strong>, og du har to forsøg i hver.</p>
+
+        <p style="font-size:.88rem;">Er frakendelsen sket på grund af spiritus, kan der også være krav om et ANT-kursus (alkohol, narko og trafik). Og er du blevet frakendt inden for dine <strong>første tre år</strong> som bilist, er det typisk ikke generhvervelse, men <a href="/saerlig-koreundervisning/">særlig køreundervisning</a>, du skal bruge – se afsnittet nedenfor.</p>
+
+        <h2>Hvad koster det?</h2>
+        <table class="extras-table">
+          <tr><td>Vores pakke (undervisning og billeje)</td><td>3.695 kr</td></tr>
+          <tr><td>Kontrollerende køreprøve – gebyr til staten</td><td>1.690 kr</td></tr>
+          <tr><td>Ekstra kørelektioner, hvis du får brug for dem</td><td>650 kr / lektion</td></tr>
+        </table>
+        <p>Prøvegebyret betales til staten, ikke til køreskolen. Delbetaling er mulig – spørg Carina.</p>
+
         <h2>Hvad indeholder pakken?</h2>
         <div class="pakke-box">
           <h3>Vores pakkeløsning indeholder</h3>
@@ -111,6 +132,10 @@ require __DIR__ . '/partials/header.php';
           <li><strong><a href="/saerlig-koreundervisning/">Særlig køreundervisning</a></strong> – du har fået et <strong>kørselsforbud</strong>, typisk som ny bilist inden for de første 3 år. Her er et lovpligtigt undervisningsforløb en betingelse.</li>
         </ul>
         <p>Er du i tvivl om, hvad der gælder for dig, så ring til os på <a href="tel:+4560441223">60 44 12 23</a> – så finder vi ud af det sammen, inden du betaler for noget.</p>
+
+        <p style="font-size:.82rem; margin-top:1.75rem; padding-top:.75rem; border-top:1px solid var(--border);">
+          Reglerne om frakendelse og generhvervelse er beskrevet på <a href="https://www.borger.dk/transport-trafik-rejser/Biler-og-koerekort/koerekort/generhverv-efter-frakendelse-af-koerekort" target="_blank" rel="noopener">borger.dk</a> og hos <a href="https://www.fstyr.dk/privat/koerekort/frakendelse-og-generhvervelse-" target="_blank" rel="noopener">Færdselsstyrelsen</a>. Gebyrer og regler kan ændre sig – tjek de officielle sider, eller spørg os. Opdateret oktober 2026.
+        </p>
 
         <div class="cta-band">
           <h2>Kom lovligt bag rattet igen</h2>
