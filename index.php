@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="da">
 <?php
-$page_title       = 'ProDriving Køreskole Aalborg | Personlig køreundervisning';
-$page_description = 'ProDriving køreskole i Aalborg. Små hold – vi tager hensyn til ADHD og ordblindhed. Kørekort til bil fra 12.995 kr inkl. moms. Ring til os på 60 44 12 23.';
+// P07: the #1 competitor for "køreskole aalborg" carries its next class date
+// in the title and updates it by hand. We read ours from DrivePilot instead,
+// so it cannot go stale. Returns null if the fetch or parse fails, and the
+// title then falls back to the version without a date.
+require __DIR__ . '/partials/naeste-hold.php';
+$naeste_hold = prodriving_naeste_hold();
+
+$page_title = $naeste_hold
+  ? 'Køreskole Aalborg – næste hold ' . $naeste_hold['dato'] . ' | ProDriving'
+  : 'Køreskole Aalborg – små hold og personlig undervisning | ProDriving';
+
+$page_description = $naeste_hold
+  ? 'ProDriving køreskole i Aalborg. Næste hold starter ' . $naeste_hold['dato'] . '. Små hold, hensyn til ADHD og ordblindhed. Kørekort til bil 12.995 kr inkl. moms.'
+  : 'ProDriving køreskole i Aalborg. Små hold – vi tager hensyn til ADHD og ordblindhed. Kørekort til bil fra 12.995 kr inkl. moms. Ring til os på 60 44 12 23.';
 $page_canonical   = 'https://prodriving.dk/';
 $page_og_title    = 'ProDriving Køreskole Aalborg';
 $page_og_description = 'Små hold. Personlig køreundervisning med hensyn til ADHD og ordblindhed. Aalborg centrum.';
@@ -256,7 +268,7 @@ require __DIR__ . '/partials/header.php';
     <section class="section" id="hold-start">
       <div class="container">
         <p class="section-label">Tilmelding</p>
-        <h2 class="section-title">Næste hold starter</h2>
+        <h2 class="section-title">Næste hold starter<?= $naeste_hold ? ' ' . htmlspecialchars($naeste_hold['dato']) : '' ?></h2>
         <p class="section-sub">Teori hver tirsdag og torsdag kl. 17:00.</p>
 
         <div class="tilmeld-card" id="tilmeld-drivepilot" style="margin-top:2rem; scroll-margin-top:6rem;">
