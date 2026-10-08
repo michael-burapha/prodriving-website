@@ -33,6 +33,7 @@ rsync -avz \
   --exclude 'DESIGN.md' \
   --exclude 'deploy.sh' \
   --exclude '.DS_Store' \
+  --exclude 'cache/naeste-hold.json' \
   "$LOCAL_DIR/" \
   "$REMOTE:$REMOTE_PATH/"
 
