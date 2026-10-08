@@ -28,8 +28,23 @@ $css_version = is_file($css_path) ? filemtime($css_path) : '1';
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Consent Mode v2: no analytics cookies until the visitor accepts in the cookie bar
+    var cookieConsent = null;
+    try { cookieConsent = localStorage.getItem('cookieConsent'); } catch (e) {}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: cookieConsent === 'accepted' ? 'granted' : 'denied'
+    });
     gtag('js', new Date());
     gtag('config', 'G-6GH4MTFEDH');
+
+    // Phone clicks as a GA4 event (marked as key event in GA4)
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+      if (a) gtag('event', 'phone_click', { link_url: a.getAttribute('href'), page_path: location.pathname });
+    });
   </script>
   <title><?= htmlspecialchars($page_title) ?></title>
   <meta name="description" content="<?= htmlspecialchars($page_description) ?>" />

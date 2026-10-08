@@ -95,6 +95,7 @@ $h = $is_home ? '' : '/';
           headers: { 'Accept': 'application/json' }
         });
         if (res.ok) {
+          gtag('event', 'generate_lead', { form_id: 'tilmeldForm', page_path: location.pathname });
           tilmeldForm.reset();
           document.getElementById('formSuccess').style.display = 'block';
           btn.style.display = 'none';
@@ -114,11 +115,13 @@ $h = $is_home ? '' : '/';
 
     function acceptCookies() {
       localStorage.setItem('cookieConsent', 'accepted');
+      gtag('consent', 'update', { analytics_storage: 'granted' });
       cookieBar.classList.add('hidden');
     }
 
     function rejectCookies() {
       localStorage.setItem('cookieConsent', 'rejected');
+      gtag('consent', 'update', { analytics_storage: 'denied' });
       cookieBar.classList.add('hidden');
     }
 
