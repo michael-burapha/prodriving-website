@@ -455,7 +455,9 @@
       background: none; border: none; font-size: 1.4rem;
       cursor: pointer; color: var(--muted); line-height: 1;
     }
-    .policy-modal h2 { font-size: 1.5rem; font-weight: 900; margin-bottom: 1.5rem; }
+    /* Not an <h2>: it would otherwise be the first H2 on every page, ahead
+       of real content. Styled to look identical. */
+    .policy-title { font-size: 1.5rem; font-weight: 900; margin-bottom: 1.5rem; }
     .policy-modal h3 { font-size: 1rem; font-weight: 800; margin: 1.5rem 0 .4rem; }
     .policy-modal p, .policy-modal li { font-size: .88rem; color: var(--muted); line-height: 1.75; }
     .policy-modal ul { margin: .4rem 0 .75rem 1.3rem; }
@@ -683,3 +685,27 @@
       border: 1.5px solid rgba(26,45,66,.22);
     }
     .elev-btn-like:hover { border-color: rgba(26,45,66,.45); }
+
+    /* Two-column included / not-included table on the price guide */
+    .pris-oversigt {
+      width: 100%; border-collapse: collapse; margin: 1rem 0 1.25rem; font-size: .92rem;
+    }
+    .pris-oversigt th {
+      text-align: left; padding: .6rem .7rem; background: var(--bg-2);
+      font-size: .82rem; font-weight: 800; border-bottom: 2px solid var(--accent);
+    }
+    .pris-oversigt th:first-child { border-bottom-color: #2f9e55; }
+    .pris-oversigt td {
+      padding: .55rem .7rem; border-bottom: 1px solid var(--border);
+      color: var(--muted); vertical-align: top; width: 50%;
+    }
+    .pris-oversigt td.pris-sum {
+      font-weight: 800; color: var(--text); border-bottom: none; padding-top: .7rem;
+    }
+    @media (max-width: 560px) {
+      .pris-oversigt, .pris-oversigt tbody, .pris-oversigt tr, .pris-oversigt td, .pris-oversigt th { display: block; width: 100%; }
+      .pris-oversigt thead { display: none; }
+      .pris-oversigt tr { margin-bottom: .2rem; }
+      .pris-oversigt td:first-child::before  { content: '✓ '; color: #2f9e55; font-weight: 800; }
+      .pris-oversigt td:nth-child(2)::before { content: '+ '; color: var(--accent); font-weight: 800; }
+    }

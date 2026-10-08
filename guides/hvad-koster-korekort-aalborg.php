@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="da">
 <?php
-$page_title       = 'Hvad koster et kørekort i Aalborg i 2026? | ProDriving';
-$page_description = 'Hele regnestykket for et kørekort i Aalborg: undervisning fra 12.995 kr plus gebyrer, lægeattest, førstehjælp og billeje. Realistisk total ca. 17.145 kr.';
+// Title leads with "Kørekort pris Aalborg" to match the queries this page
+// already ranks for (kørekort pris 8.7, kørekort pris aalborg 12.7). The H1
+// keeps the "hvad koster"-phrasing, which it also ranks for.
+$page_title       = 'Kørekort pris Aalborg 2026 – 12.995 kr + gebyrer | ProDriving';
+$page_description = 'Hvad koster et kørekort i Aalborg i 2026? Undervisning 12.995 kr, plus gebyr, lægeattest, førstehjælp og billeje. Realistisk total ca. 17.145 kr.';
 $page_canonical   = 'https://prodriving.dk/guides/hvad-koster-korekort-aalborg/';
 $page_og_title    = 'Hvad koster et kørekort i Aalborg i 2026?';
 
@@ -67,6 +70,23 @@ require __DIR__ . '/../partials/header.php';
         <h2>Kort svar</h2>
         <p>Et kørekort til bil i Aalborg koster hos ProDriving <strong>12.995 kr for selve undervisningen</strong>. Lægger du de lovpligtige udgifter til tredjepart oveni, ender et forløb uden ekstra kørelektioner typisk på <strong>ca. 17.145 kr</strong> i alt.</p>
         <p>Nedenfor er hele regnestykket – og en gennemgang af, hvad der reelt kan få tallet til at stige.</p>
+
+        <h3>Hurtigt overblik: hvad er med i prisen?</h3>
+        <table class="pris-oversigt">
+          <thead>
+            <tr><th>Inkluderet i de 12.995 kr</th><th>Betales separat</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Teoriundervisning (min. 30 lektioner)</td><td>Gebyr til Færdselsstyrelsen – 1.600 kr</td></tr>
+            <tr><td>Manøvrebane (3 lektioner)</td><td>Førstehjælpskursus – ca. 700 kr</td></tr>
+            <tr><td>Manøvre på vej (16 kørelektioner)</td><td>Lægeattest – ca. 500 kr</td></tr>
+            <tr><td>Mørkekørsel (1 kørelektion)</td><td>Pasfoto – ca. 100 kr</td></tr>
+            <tr><td>Køreteknisk anlæg (4 lektioner)</td><td>Billeje til køreprøven – 1.000 kr</td></tr>
+            <tr><td>Små hold og hensyn til ADHD/ordblindhed</td><td>Online teorikode – 250 kr</td></tr>
+            <tr><td class="pris-sum">12.995 kr</td><td class="pris-sum">ca. 4.150 kr</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:.9rem;">Begge dele lagt sammen: <strong>ca. 17.145 kr</strong> for et forløb uden ekstra kørelektioner.</p>
 
         <h2>1. Undervisningen: 12.995 kr</h2>
         <p>Det er den lovpligtige pakke, og den dækker hele forløbet fra første teorilektion til du er klar til køreprøven:</p>

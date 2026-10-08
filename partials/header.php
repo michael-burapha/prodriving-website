@@ -22,7 +22,7 @@ $h = $is_home ? '' : '/';
   <div class="policy-overlay" id="policyOverlay">
     <div class="policy-modal">
       <button class="policy-close" onclick="closePolicy()" aria-label="Luk">✕</button>
-      <h2>Privatlivs- og cookiepolitik</h2>
+      <div class="policy-title">Privatlivs- og cookiepolitik</div>
 
       <h3>Dataansvarlig</h3>
       <p>ProDriving · CVR 30416627 · Enggårdsgade 5, kld., 9000 Aalborg<br>

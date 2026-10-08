@@ -127,7 +127,7 @@ require __DIR__ . '/partials/header.php';
             <div class="ydelse-icon">🚗</div>
             <h3>Kørekort til bil</h3>
             <p>Få dit første kørekort med personlig undervisning. Du kan starte allerede som 16 år og 9 måneder. Vi kører i både manuel og automatgear.</p>
-            <a class="ydelse-more" href="/korekort-til-bil-aalborg/">Læs mere om kørekort til bil →</a>
+            <a class="ydelse-more" href="/korekort-til-bil-aalborg/">Læs mere om kørekort til bil i Aalborg →</a>
           </div>
           <div class="ydelse-card">
             <div class="ydelse-icon">📋</div>
@@ -227,6 +227,9 @@ require __DIR__ . '/partials/header.php';
         </table>
         <p style="font-size:.78rem; color:var(--muted); margin-top:1rem;">
           Alle priser er inkl. moms. Delbetaling er mulig – spørg Carina for mere info.
+        </p>
+        <p style="margin-top:.9rem;">
+          <a class="ydelse-more" href="/guides/hvad-koster-korekort-aalborg/">Se hele regnestykket: kørekort pris i Aalborg →</a>
         </p>
         <p style="font-size:.75rem; color:var(--muted); margin-top:.5rem; line-height:1.6; border-top:1px solid var(--border); padding-top:.75rem;">
           * Priser på tredjepartsydelser (førstehjælpskursus, lægeattest, gebyr til Færdselsstyrelsen) er vejledende og fastsættes af den pågældende udbyder. ProDriving tager forbehold for trykfejl og prisændringer uden forudgående varsel.

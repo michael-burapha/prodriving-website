@@ -108,6 +108,7 @@ require __DIR__ . '/partials/header.php';
           <li>Ekstra kørelektioner, hvis du får brug for dem – 650 kr / lektion</li>
         </ul>
         <p>Har du brug for at fordele beløbet, er <strong>delbetaling mulig</strong> – spørg Carina, så finder vi en løsning.</p>
+        <p>Vil du se hele regnestykket med alle udgifter lagt sammen? Se vores gennemgang af <a href="/guides/hvad-koster-korekort-aalborg/">kørekort pris i Aalborg</a>.</p>
 
         <h2>Regler for 17-årige</h2>
         <p>Består du prøven som 17-årig, må du køre bil alene om dagen:</p>
