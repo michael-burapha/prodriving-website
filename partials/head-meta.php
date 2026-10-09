@@ -83,6 +83,11 @@ $css_version = is_file($css_path) ? filemtime($css_path) : '1';
       "addressCountry": "DK"
     },
     "description": "Køreskole i Aalborg med små hold. Særligt hensyn til ADHD og ordblindhed. Kørekort til bil, generhvervelse, særlig køreundervisning og rutinetimer.",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61591608549228",
+      "https://www.youtube.com/@ProDrivingdk",
+      "https://www.google.com/maps?cid=4831068671964564090"
+    ],
     "currenciesAccepted": "DKK",
     "priceRange": "kr 650 – kr 12.995",
     "founder": { "@type": "Person", "name": "Carina Hansen" }

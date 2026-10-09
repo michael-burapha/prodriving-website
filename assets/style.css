@@ -380,6 +380,9 @@
 
     .footer-ci { display: flex; align-items: flex-start; gap: .7rem; font-size: .86rem; color: rgba(255,255,255,.7); margin-bottom: .75rem; }
     .footer-ci .ic { font-size: .95rem; flex-shrink: 0; margin-top: .1rem; }
+    .footer-social { display: flex; gap: 1rem; margin-top: 1rem; }
+    .footer-social a { font-size: .86rem; color: rgba(255,255,255,.7); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.25); padding-bottom: 1px; }
+    .footer-social a:hover { color: #fff; border-bottom-color: #fff; }
 
     .footer-bottom {
       border-top: 1px solid rgba(255,255,255,.1); padding-top: 1.5rem;

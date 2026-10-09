@@ -54,6 +54,10 @@ $h = $is_home ? '' : '/';
             <span class="ic">🏢</span>
             <div>CVR: 30416627</div>
           </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61591608549228" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.youtube.com/@ProDrivingdk" target="_blank" rel="noopener">YouTube</a>
+          </div>
         </div>
 
       </div>
