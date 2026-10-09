@@ -88,6 +88,11 @@ $css_version = is_file($css_path) ? filemtime($css_path) : '1';
       "https://www.youtube.com/@ProDrivingdk",
       "https://www.google.com/maps?cid=4831068671964564090"
     ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday"], "opens": "07:30", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Thursday"], "opens": "07:30", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "07:30", "closes": "16:00" }
+    ],
     "currenciesAccepted": "DKK",
     "priceRange": "kr 650 – kr 12.995",
     "founder": { "@type": "Person", "name": "Carina Hansen" }

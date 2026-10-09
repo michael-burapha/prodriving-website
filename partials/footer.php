@@ -51,6 +51,14 @@ $h = $is_home ? '' : '/';
             <div>Enggårdsgade 5, kld.<br>9000 Aalborg</div>
           </div>
           <div class="footer-ci">
+            <span class="ic">🕗</span>
+            <div>
+              Man &amp; ons: 7.30–17.00<br>
+              Tir &amp; tor: 7.30–19.00<br>
+              Fre: 7.30–16.00
+            </div>
+          </div>
+          <div class="footer-ci">
             <span class="ic">🏢</span>
             <div>CVR: 30416627</div>
           </div>
